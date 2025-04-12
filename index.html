@@ -1,4 +1,75 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Popup Example</title>
+  <style>
+    /* Full-screen overlay with blurry background */
+    .popup-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      backdrop-filter: blur(5px); /* Blurry effect */
+      background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000; /* Ensure it's on top of other elements */
+    }
+
+    /* Popup box styling */
+    .popup-box {
+      background-color: white;
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      width: 30%; /* Covers 30% of the screen width */
+      max-width: 400px; /* Limit maximum width for smaller screens */
+    }
+
+    /* Close button styling */
+    .popup-box button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .popup-box button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <!-- Popup Overlay -->
+  <div class="popup-overlay" id="popupOverlay">
+    <div class="popup-box">
+      <p>Use computer for better experience</p>
+      <button onclick="closePopup()">Close</button>
+    </div>
+  </div>
+
+  <script>
+    // Function to close the popup
+    function closePopup() {
+      const popup = document.getElementById('popupOverlay');
+      popup.style.display = 'none'; // Hide the popup
+    }
+
+    // Show the popup when the page loads
+    window.onload = function () {
+      const popup = document.getElementById('popupOverlay');
+      popup.style.display = 'flex'; // Display the popup
+    };
+  </script>
+</body>
 <!-- &#10024; Built with Framer &bull; https://www.framer.com/ -->
 <html lang="en">
 
