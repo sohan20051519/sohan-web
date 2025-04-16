@@ -1,74 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Popup Example</title>
-  <style>
-    /* Full-screen overlay with blurry background */
-    .popup-overlay {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      backdrop-filter: blur(5px); /* Blurry effect */
-      background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      z-index: 1000; /* Ensure it's on top of other elements */
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup Example</title>
+    <style>
+        /* Full-screen overlay with blurry background */
+        .popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            backdrop-filter: blur(5px);
+            /* Blurry effect */
+            background-color: rgba(0, 0, 0, 0.5);
+            /* Semi-transparent background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            /* Ensure it's on top of other elements */
+        }
 
-    /* Popup box styling */
-    .popup-box {
-      background-color: white;
-      padding: 20px;
-      border-radius: 16px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-      text-align: center;
-      width: 30%; /* Covers 30% of the screen width */
-      max-width: 400px; /* Limit maximum width for smaller screens */
-    }
+        /* Popup box styling */
+        .popup-box {
+            background-color: white;
+            padding: 20px;
+            border-radius: 16px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 30%;
+            /* Covers 30% of the screen width */
+            max-width: 400px;
+            /* Limit maximum width for smaller screens */
+        }
 
-    /* Close button styling */
-    .popup-box button {
-      margin-top: 15px;
-      padding: 10px 20px;
-      background-color: #007bff;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-    }
+        /* Close button styling */
+        .popup-box button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
 
-    .popup-box button:hover {
-      background-color: #0056b3;
-    }
-  </style>
+        .popup-box button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
+
 <body>
-  <!-- Popup Overlay -->
-  <div class="popup-overlay" id="popupOverlay">
-    <div class="popup-box">
-      <p>Use computer for better experience</p>
-      <button onclick="closePopup()">Close</button>
+    <!-- Popup Overlay -->
+    <div class="popup-overlay" id="popupOverlay">
+        <div class="popup-box">
+            <p>Use computer for better experience</p>
+            <button onclick="closePopup()">Close</button>
+        </div>
     </div>
-  </div>
 
-  <script>
-    // Function to close the popup
-    function closePopup() {
-      const popup = document.getElementById('popupOverlay');
-      popup.style.display = 'none'; // Hide the popup
-    }
+    <script>
+        // Function to close the popup
+        function closePopup() {
+            const popup = document.getElementById('popupOverlay');
+            popup.style.display = 'none'; // Hide the popup
+        }
 
-    // Show the popup when the page loads
-    window.onload = function () {
-      const popup = document.getElementById('popupOverlay');
-      popup.style.display = 'flex'; // Display the popup
-    };
-  </script>
+        // Show the popup when the page loads
+        window.onload = function () {
+            const popup = document.getElementById('popupOverlay');
+            popup.style.display = 'flex'; // Display the popup
+        };
+    </script>
 </body>
 
 <head>
@@ -80,12 +87,12 @@
 
     <!-- End of headStart -->
     <meta name="viewport" content="width=device-width">
-    <meta name="generator" content="Framer 2abc263">
+    <meta name="generator" content="Framer b0cf16c">
     <title>SOHAN WEB SEDIGNER</title>
     <meta name="description"
         content="Designed for agencies, portfolios, and personal brands, it seamlessly blends minimalist aesthetics with dynamic animations. Showcase your work in style with a sleek interface that flawlessly adapts to any device.">
     <meta name="framer-search-index"
-        content="https://framerusercontent.com/sites/7qKyFZs1XGqSxfS7CW80Ra/searchIndex-6ecWLXQkXRKb.json">
+        content="https://framerusercontent.com/sites/7qKyFZs1XGqSxfS7CW80Ra/searchIndex-0F4SmMOEGpbS.json">
     <link href="favicons/images-i3SIGroaVsjFoBpH2wC8uOyiI1s.png" rel="icon" media="(prefers-color-scheme: light)">
     <link href="favicons/images-i3SIGroaVsjFoBpH2wC8uOyiI1s.png" rel="icon" media="(prefers-color-scheme: dark)">
     <link rel="apple-touch-icon" href="favicons/images-i3SIGroaVsjFoBpH2wC8uOyiI1s.png">
@@ -104,8 +111,8 @@
 
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
     <meta name="robots" content="max-image-preview:large">
-    <link rel="canonical" href="https://cuddly-essentials-917564.framer.app/">
-    <meta property="og:url" content="https://cuddly-essentials-917564.framer.app/">
+    <link rel="canonical" href="https://sohanwebsedigner.framer.website/">
+    <meta property="og:url" content="https://sohanwebsedigner.framer.website/">
     <style data-framer-breakpoint-css>
         @media(min-width: 1200px) {
             .hidden-72rtr7 {
@@ -144,7 +151,7 @@
         }
     </style>
     <style data-framer-css-ssr-minified
-        data-framer-components="framer-lib-cursors-host framer-By1uk PropertyOverrides framer-laFpK framer-j5Ovo framer-G90dz framer-l7rzD framer-Rl6bU framer-0WNbH framer-AMx4a framer-UMWyk framer-ha7lu framer-RT3EA framer-0F6vL framer-rRVpX framer-PZXIC framer-VBR1P framer-8HJPi framer-SFNrg framer-FRqNG">
+        data-framer-components="framer-lib-cursors-host framer-By1uk PropertyOverrides framer-laFpK framer-j5Ovo framer-ziOPa framer-l7rzD framer-Rl6bU framer-0WNbH framer-AMx4a framer-UMWyk framer-ha7lu framer-RT3EA framer-0F6vL framer-rRVpX framer-PZXIC framer-VBR1P framer-8HJPi framer-SFNrg framer-FRqNG">
         html,
         body,
         #main {
@@ -197,7 +204,7 @@
             --token-1dfb5f8e-6d59-4a6a-bbc6-917bc568117f: rgb(0, 0, 0)
         }
 
-        }
+        
 
         @font-face {
             font-family: "PT Serif";
@@ -2678,12 +2685,12 @@
             width: 1px
         }
 
-        .framer-G90dz.framer-lux5qc,
-        .framer-G90dz .framer-lux5qc {
+        .framer-ziOPa.framer-lux5qc,
+        .framer-ziOPa .framer-lux5qc {
             display: block
         }
 
-        .framer-G90dz.framer-72rtr7 {
+        .framer-ziOPa.framer-72rtr7 {
             align-content: center;
             align-items: center;
             background-color: #fff;
@@ -2700,7 +2707,7 @@
             width: 1200px
         }
 
-        .framer-G90dz .framer-1q66or9-container {
+        .framer-ziOPa .framer-1q66or9-container {
             flex: none;
             height: auto;
             left: 50%;
@@ -2711,7 +2718,7 @@
             z-index: 1
         }
 
-        .framer-G90dz .framer-11yezan {
+        .framer-ziOPa .framer-11yezan {
             align-content: center;
             align-items: center;
             display: flex;
@@ -2727,7 +2734,7 @@
             width: 100%
         }
 
-        .framer-G90dz .framer-dewjtt {
+        .framer-ziOPa .framer-dewjtt {
             align-content: flex-start;
             align-items: flex-start;
             display: flex;
@@ -2743,7 +2750,7 @@
             width: 100%
         }
 
-        .framer-G90dz .framer-qymg3e {
+        .framer-ziOPa .framer-qymg3e {
             flex: none;
             height: 200vh;
             left: 0;
@@ -2754,7 +2761,7 @@
             z-index: 1
         }
 
-        .framer-G90dz .framer-1tu7b0v {
+        .framer-ziOPa .framer-1tu7b0v {
             align-content: center;
             align-items: center;
             display: flex;
@@ -2772,7 +2779,7 @@
             z-index: 1
         }
 
-        .framer-G90dz .framer-rr25gv-container {
+        .framer-ziOPa .framer-rr25gv-container {
             flex: none;
             height: auto;
             left: 0;
@@ -2783,7 +2790,7 @@
             z-index: 1
         }
 
-        .framer-G90dz .framer-7pinbo {
+        .framer-ziOPa .framer-7pinbo {
             align-content: center;
             align-items: center;
             display: flex;
@@ -2803,7 +2810,7 @@
             z-index: 2
         }
 
-        .framer-G90dz .framer-1b59nf9 {
+        .framer-ziOPa .framer-1b59nf9 {
             align-content: flex-end;
             align-items: flex-end;
             bottom: -60px;
@@ -2822,7 +2829,7 @@
             z-index: 1
         }
 
-        .framer-G90dz .framer-1y0u9zb-container {
+        .framer-ziOPa .framer-1y0u9zb-container {
             flex: none;
             height: auto;
             left: 0;
@@ -2833,7 +2840,7 @@
             z-index: 1
         }
 
-        .framer-G90dz .framer-46ck4z-container {
+        .framer-ziOPa .framer-46ck4z-container {
             flex: none;
             height: auto;
             left: 28px;
@@ -2844,7 +2851,7 @@
             z-index: 1
         }
 
-        .framer-G90dz .framer-id6fne-container {
+        .framer-ziOPa .framer-id6fne-container {
             flex: none;
             height: auto;
             left: 56px;
@@ -2855,7 +2862,7 @@
             z-index: 1
         }
 
-        .framer-G90dz .framer-f99up4 {
+        .framer-ziOPa .framer-f99up4 {
             --framer-link-text-color: #0099ff;
             --framer-link-text-decoration: underline;
             flex: none;
@@ -2865,7 +2872,7 @@
             width: auto
         }
 
-        .framer-G90dz .framer-njno9a {
+        .framer-ziOPa .framer-njno9a {
             --framer-link-text-color: #0099ff;
             --framer-link-text-decoration: underline;
             flex: none;
@@ -2879,7 +2886,7 @@
             z-index: 1
         }
 
-        .framer-G90dz .framer-13cm7vp-container {
+        .framer-ziOPa .framer-13cm7vp-container {
             flex: none;
             height: auto;
             left: 50%;
@@ -2890,7 +2897,7 @@
             z-index: 1
         }
 
-        .framer-G90dz .framer-1x8uxzw-container {
+        .framer-ziOPa .framer-1x8uxzw-container {
             flex: none;
             height: 280px;
             position: relative;
@@ -2898,7 +2905,7 @@
             z-index: 1
         }
 
-        .framer-G90dz .framer-savbv9-container {
+        .framer-ziOPa .framer-savbv9-container {
             bottom: -168px;
             flex: none;
             height: auto;
@@ -2909,7 +2916,7 @@
             z-index: 2
         }
 
-        .framer-G90dz .framer-1chkqma {
+        .framer-ziOPa .framer-1chkqma {
             align-content: center;
             align-items: center;
             display: flex;
@@ -2925,7 +2932,7 @@
             width: 1100px
         }
 
-        .framer-G90dz .framer-1rbiqmn {
+        .framer-ziOPa .framer-1rbiqmn {
             aspect-ratio: 1 / 1;
             flex: none;
             height: var(--framer-aspect-ratio-supported, 280px);
@@ -2937,7 +2944,7 @@
             z-index: 1
         }
 
-        .framer-G90dz .framer-2qne85 {
+        .framer-ziOPa .framer-2qne85 {
             aspect-ratio: 1 / 1;
             flex: none;
             height: var(--framer-aspect-ratio-supported, 280px);
@@ -2950,7 +2957,7 @@
             z-index: 2
         }
 
-        .framer-G90dz .framer-cwtr1j {
+        .framer-ziOPa .framer-cwtr1j {
             aspect-ratio: 1 / 1;
             bottom: -36px;
             flex: none;
@@ -2962,7 +2969,7 @@
             z-index: 1
         }
 
-        .framer-G90dz .framer-gfruwm {
+        .framer-ziOPa .framer-gfruwm {
             aspect-ratio: 1 / 1;
             flex: none;
             height: var(--framer-aspect-ratio-supported, 280px);
@@ -2975,7 +2982,7 @@
             z-index: 2
         }
 
-        .framer-G90dz .framer-z3ohu7 {
+        .framer-ziOPa .framer-z3ohu7 {
             aspect-ratio: 1 / 1;
             flex: none;
             height: var(--framer-aspect-ratio-supported, 280px);
@@ -2988,7 +2995,7 @@
             z-index: 1
         }
 
-        .framer-G90dz .framer-13k02wq {
+        .framer-ziOPa .framer-13k02wq {
             aspect-ratio: 1 / 1;
             backface-visibility: hidden;
             bottom: -44px;
@@ -3001,7 +3008,7 @@
             z-index: 2
         }
 
-        .framer-G90dz .framer-1t98zrv {
+        .framer-ziOPa .framer-1t98zrv {
             align-content: flex-start;
             align-items: flex-start;
             background-color: var(--token-6bef2831-d541-489a-82bb-da4e27db4e2c, #ffffff);
@@ -3019,7 +3026,7 @@
             width: 100%
         }
 
-        .framer-G90dz .framer-j9yo38 {
+        .framer-ziOPa .framer-j9yo38 {
             align-content: center;
             align-items: center;
             display: flex;
@@ -3038,9 +3045,9 @@
             z-index: 1
         }
 
-        .framer-G90dz .framer-1y5qqoz,
-        .framer-G90dz .framer-1vaeyyw,
-        .framer-G90dz .framer-mvibsp {
+        .framer-ziOPa .framer-1y5qqoz,
+        .framer-ziOPa .framer-1vaeyyw,
+        .framer-ziOPa .framer-mvibsp {
             border-radius: 24px;
             flex: none;
             height: 100vh;
@@ -3051,7 +3058,7 @@
             z-index: 1
         }
 
-        .framer-G90dz .framer-m276ll {
+        .framer-ziOPa .framer-m276ll {
             align-content: center;
             align-items: center;
             display: flex;
@@ -3069,7 +3076,7 @@
             z-index: 1
         }
 
-        .framer-G90dz .framer-ss6pia {
+        .framer-ziOPa .framer-ss6pia {
             --framer-link-text-color: #0099ff;
             --framer-link-text-decoration: underline;
             flex: none;
@@ -3085,7 +3092,7 @@
             z-index: 1
         }
 
-        .framer-G90dz .framer-5t5cko {
+        .framer-ziOPa .framer-5t5cko {
             aspect-ratio: 1 / 1;
             flex: none;
             height: var(--framer-aspect-ratio-supported, 640px);
@@ -3098,7 +3105,7 @@
             z-index: 1
         }
 
-        .framer-G90dz .framer-3dcuce {
+        .framer-ziOPa .framer-3dcuce {
             aspect-ratio: 1 / 1;
             flex: none;
             height: var(--framer-aspect-ratio-supported, 640px);
@@ -3111,7 +3118,7 @@
             z-index: 1
         }
 
-        .framer-G90dz .framer-1u0pjka {
+        .framer-ziOPa .framer-1u0pjka {
             align-content: center;
             align-items: center;
             border-radius: 24px;
@@ -3131,9 +3138,9 @@
             z-index: 1
         }
 
-        .framer-G90dz .framer-huvfll,
-        .framer-G90dz .framer-1a2dup1,
-        .framer-G90dz .framer-4rbx2f {
+        .framer-ziOPa .framer-huvfll,
+        .framer-ziOPa .framer-1a2dup1,
+        .framer-ziOPa .framer-4rbx2f {
             align-content: center;
             align-items: center;
             display: flex;
@@ -3151,8 +3158,8 @@
             z-index: 1
         }
 
-        .framer-G90dz .framer-xa0mm2-container,
-        .framer-G90dz .framer-10flm93-container {
+        .framer-ziOPa .framer-xa0mm2-container,
+        .framer-ziOPa .framer-10flm93-container {
             flex: none;
             height: auto;
             max-width: 900px;
@@ -3160,7 +3167,7 @@
             width: 100%
         }
 
-        .framer-G90dz .framer-1cpj5m4-container {
+        .framer-ziOPa .framer-1cpj5m4-container {
             flex: none;
             height: auto;
             max-width: 900px;
@@ -3169,7 +3176,7 @@
             z-index: 1
         }
 
-        .framer-G90dz .framer-wvkvs1 {
+        .framer-ziOPa .framer-wvkvs1 {
             align-content: flex-start;
             align-items: flex-start;
             background-color: var(--token-6bef2831-d541-489a-82bb-da4e27db4e2c, #ffffff);
@@ -3186,7 +3193,7 @@
             width: 100%
         }
 
-        .framer-G90dz .framer-1pvdr9c {
+        .framer-ziOPa .framer-1pvdr9c {
             align-content: center;
             align-items: center;
             display: flex;
@@ -3201,7 +3208,7 @@
             position: absolute
         }
 
-        .framer-G90dz .framer-1cciwpj {
+        .framer-ziOPa .framer-1cciwpj {
             border-radius: 24px;
             flex: none;
             inset: 0;
@@ -3211,9 +3218,9 @@
             z-index: 1
         }
 
-        .framer-G90dz .framer-qkzqqr,
-        .framer-G90dz .framer-i9etg6,
-        .framer-G90dz .framer-v04x93 {
+        .framer-ziOPa .framer-qkzqqr,
+        .framer-ziOPa .framer-i9etg6,
+        .framer-ziOPa .framer-v04x93 {
             align-content: center;
             align-items: center;
             display: flex;
@@ -3231,22 +3238,22 @@
             z-index: 1
         }
 
-        .framer-G90dz .framer-ms1di8,
-        .framer-G90dz .framer-3yt83f,
-        .framer-G90dz .framer-1c0ewje,
-        .framer-G90dz .framer-dzrd7c,
-        .framer-G90dz .framer-1lype57,
-        .framer-G90dz .framer-1393tzt,
-        .framer-G90dz .framer-2x3hit,
-        .framer-G90dz .framer-uwd414,
-        .framer-G90dz .framer-xefe37,
-        .framer-G90dz .framer-1ieadu8,
-        .framer-G90dz .framer-1nprhlz,
-        .framer-G90dz .framer-1fphfjt,
-        .framer-G90dz .framer-1vliokx,
-        .framer-G90dz .framer-unlzmn,
-        .framer-G90dz .framer-199zeuq,
-        .framer-G90dz .framer-awn4br {
+        .framer-ziOPa .framer-ms1di8,
+        .framer-ziOPa .framer-3yt83f,
+        .framer-ziOPa .framer-1c0ewje,
+        .framer-ziOPa .framer-dzrd7c,
+        .framer-ziOPa .framer-1lype57,
+        .framer-ziOPa .framer-1393tzt,
+        .framer-ziOPa .framer-2x3hit,
+        .framer-ziOPa .framer-uwd414,
+        .framer-ziOPa .framer-xefe37,
+        .framer-ziOPa .framer-1ieadu8,
+        .framer-ziOPa .framer-1nprhlz,
+        .framer-ziOPa .framer-1fphfjt,
+        .framer-ziOPa .framer-1vliokx,
+        .framer-ziOPa .framer-unlzmn,
+        .framer-ziOPa .framer-199zeuq,
+        .framer-ziOPa .framer-awn4br {
             --framer-link-text-color: #0099ff;
             --framer-link-text-decoration: underline;
             flex: none;
@@ -3259,7 +3266,7 @@
             z-index: 1
         }
 
-        .framer-G90dz .framer-10iu1of {
+        .framer-ziOPa .framer-10iu1of {
             display: grid;
             flex: none;
             gap: 24px;
@@ -3275,7 +3282,7 @@
             width: 100%
         }
 
-        .framer-G90dz .framer-xdgsxt {
+        .framer-ziOPa .framer-xdgsxt {
             align-content: flex-start;
             align-items: flex-start;
             display: flex;
@@ -3291,7 +3298,7 @@
             position: absolute
         }
 
-        .framer-G90dz .framer-7s2ife {
+        .framer-ziOPa .framer-7s2ife {
             aspect-ratio: 1 / 1;
             flex: none;
             height: var(--framer-aspect-ratio-supported, 720px);
@@ -3303,12 +3310,12 @@
             z-index: 1
         }
 
-        .framer-G90dz .framer-18xds7x-container,
-        .framer-G90dz .framer-azz0t8-container,
-        .framer-G90dz .framer-8iwag3-container,
-        .framer-G90dz .framer-1c99j63-container,
-        .framer-G90dz .framer-l1r0wx-container,
-        .framer-G90dz .framer-mv6g26-container {
+        .framer-ziOPa .framer-18xds7x-container,
+        .framer-ziOPa .framer-azz0t8-container,
+        .framer-ziOPa .framer-8iwag3-container,
+        .framer-ziOPa .framer-1c99j63-container,
+        .framer-ziOPa .framer-l1r0wx-container,
+        .framer-ziOPa .framer-mv6g26-container {
             align-self: start;
             flex: none;
             height: auto;
@@ -3318,8 +3325,8 @@
             z-index: 1
         }
 
-        .framer-G90dz .framer-1mxi429,
-        .framer-G90dz .framer-1epcun4 {
+        .framer-ziOPa .framer-1mxi429,
+        .framer-ziOPa .framer-1epcun4 {
             align-content: center;
             align-items: center;
             background-color: var(--token-6bef2831-d541-489a-82bb-da4e27db4e2c, #ffffff);
@@ -3336,8 +3343,8 @@
             width: 100%
         }
 
-        .framer-G90dz .framer-c9gqc7,
-        .framer-G90dz .framer-1qjpdtt {
+        .framer-ziOPa .framer-c9gqc7,
+        .framer-ziOPa .framer-1qjpdtt {
             align-content: center;
             align-items: center;
             display: flex;
@@ -3356,8 +3363,8 @@
             top: 0
         }
 
-        .framer-G90dz .framer-17a93ev,
-        .framer-G90dz .framer-11ynaov {
+        .framer-ziOPa .framer-17a93ev,
+        .framer-ziOPa .framer-11ynaov {
             flex: none;
             height: 100vh;
             left: 0;
@@ -3368,7 +3375,7 @@
             z-index: 1
         }
 
-        .framer-G90dz .framer-1dqwdy7 {
+        .framer-ziOPa .framer-1dqwdy7 {
             align-content: flex-start;
             align-items: flex-start;
             display: flex;
@@ -3385,7 +3392,7 @@
             width: 100%
         }
 
-        .framer-G90dz .framer-iu19zg {
+        .framer-ziOPa .framer-iu19zg {
             align-content: flex-start;
             align-items: flex-start;
             align-self: stretch;
@@ -3403,7 +3410,7 @@
             width: 1px
         }
 
-        .framer-G90dz .framer-ltbl08-container {
+        .framer-ziOPa .framer-ltbl08-container {
             flex: 1 0 0px;
             height: auto;
             position: sticky;
@@ -3412,7 +3419,7 @@
             z-index: 1
         }
 
-        .framer-G90dz .framer-1m6104i {
+        .framer-ziOPa .framer-1m6104i {
             align-content: center;
             align-items: center;
             display: flex;
@@ -3428,17 +3435,17 @@
             width: 70%
         }
 
-        .framer-G90dz .framer-e0jeob,
-        .framer-G90dz .framer-cwceab,
-        .framer-G90dz .framer-1lj0y2m,
-        .framer-G90dz .framer-4j0p2h,
-        .framer-G90dz .framer-1lquz1p,
-        .framer-G90dz .framer-1j3sc5x,
-        .framer-G90dz .framer-1f1mc7v,
-        .framer-G90dz .framer-al4pnj,
-        .framer-G90dz .framer-1q4glo,
-        .framer-G90dz .framer-c8j4f6,
-        .framer-G90dz .framer-kdrb37 {
+        .framer-ziOPa .framer-e0jeob,
+        .framer-ziOPa .framer-cwceab,
+        .framer-ziOPa .framer-1lj0y2m,
+        .framer-ziOPa .framer-4j0p2h,
+        .framer-ziOPa .framer-1lquz1p,
+        .framer-ziOPa .framer-1j3sc5x,
+        .framer-ziOPa .framer-1f1mc7v,
+        .framer-ziOPa .framer-al4pnj,
+        .framer-ziOPa .framer-1q4glo,
+        .framer-ziOPa .framer-c8j4f6,
+        .framer-ziOPa .framer-kdrb37 {
             align-content: center;
             align-items: center;
             display: flex;
@@ -3455,36 +3462,36 @@
             z-index: 1
         }
 
-        .framer-G90dz .framer-1g6awp8-container,
-        .framer-G90dz .framer-prpeej-container,
-        .framer-G90dz .framer-qsnmim-container,
-        .framer-G90dz .framer-nfjns4-container,
-        .framer-G90dz .framer-14hrk6w-container,
-        .framer-G90dz .framer-ziz9r0-container,
-        .framer-G90dz .framer-4yqlr0-container,
-        .framer-G90dz .framer-1c1hkfg-container,
-        .framer-G90dz .framer-1g2xvm0-container,
-        .framer-G90dz .framer-1inip5j-container,
-        .framer-G90dz .framer-1ukpshc-container,
-        .framer-G90dz .framer-b9h0si-container {
+        .framer-ziOPa .framer-1g6awp8-container,
+        .framer-ziOPa .framer-prpeej-container,
+        .framer-ziOPa .framer-qsnmim-container,
+        .framer-ziOPa .framer-nfjns4-container,
+        .framer-ziOPa .framer-14hrk6w-container,
+        .framer-ziOPa .framer-ziz9r0-container,
+        .framer-ziOPa .framer-4yqlr0-container,
+        .framer-ziOPa .framer-1c1hkfg-container,
+        .framer-ziOPa .framer-1g2xvm0-container,
+        .framer-ziOPa .framer-1inip5j-container,
+        .framer-ziOPa .framer-1ukpshc-container,
+        .framer-ziOPa .framer-b9h0si-container {
             flex: none;
             height: auto;
             position: relative;
             width: 100%
         }
 
-        .framer-G90dz .framer-54p2cv,
-        .framer-G90dz .framer-tfs66r,
-        .framer-G90dz .framer-y5vmbb,
-        .framer-G90dz .framer-1s6y65y,
-        .framer-G90dz .framer-1fquskq,
-        .framer-G90dz .framer-1yvom51,
-        .framer-G90dz .framer-1d2sci5,
-        .framer-G90dz .framer-sm3ksp,
-        .framer-G90dz .framer-8gu6er,
-        .framer-G90dz .framer-7uw7io,
-        .framer-G90dz .framer-pyna20,
-        .framer-G90dz .framer-31ufm2 {
+        .framer-ziOPa .framer-54p2cv,
+        .framer-ziOPa .framer-tfs66r,
+        .framer-ziOPa .framer-y5vmbb,
+        .framer-ziOPa .framer-1s6y65y,
+        .framer-ziOPa .framer-1fquskq,
+        .framer-ziOPa .framer-1yvom51,
+        .framer-ziOPa .framer-1d2sci5,
+        .framer-ziOPa .framer-sm3ksp,
+        .framer-ziOPa .framer-8gu6er,
+        .framer-ziOPa .framer-7uw7io,
+        .framer-ziOPa .framer-pyna20,
+        .framer-ziOPa .framer-31ufm2 {
             flex: none;
             inset: 0;
             overflow: hidden;
@@ -3492,17 +3499,17 @@
             z-index: 1
         }
 
-        .framer-G90dz .framer-1medp2g-container,
-        .framer-G90dz .framer-1lmbz4b-container,
-        .framer-G90dz .framer-xs6oek-container,
-        .framer-G90dz .framer-ffuadh-container,
-        .framer-G90dz .framer-19hauiz-container,
-        .framer-G90dz .framer-1idjgpa-container,
-        .framer-G90dz .framer-78sci1-container,
-        .framer-G90dz .framer-1kkm8uz-container,
-        .framer-G90dz .framer-wbmpo2-container,
-        .framer-G90dz .framer-1dqf18e-container,
-        .framer-G90dz .framer-1vccsr9-container {
+        .framer-ziOPa .framer-1medp2g-container,
+        .framer-ziOPa .framer-1lmbz4b-container,
+        .framer-ziOPa .framer-xs6oek-container,
+        .framer-ziOPa .framer-ffuadh-container,
+        .framer-ziOPa .framer-19hauiz-container,
+        .framer-ziOPa .framer-1idjgpa-container,
+        .framer-ziOPa .framer-78sci1-container,
+        .framer-ziOPa .framer-1kkm8uz-container,
+        .framer-ziOPa .framer-wbmpo2-container,
+        .framer-ziOPa .framer-1dqf18e-container,
+        .framer-ziOPa .framer-1vccsr9-container {
             bottom: 72px;
             flex: none;
             height: 120px;
@@ -3512,7 +3519,7 @@
             z-index: 1
         }
 
-        .framer-G90dz .framer-jj5vmw {
+        .framer-ziOPa .framer-jj5vmw {
             align-content: center;
             align-items: center;
             display: flex;
@@ -3529,7 +3536,7 @@
             z-index: 1
         }
 
-        .framer-G90dz .framer-1p4u90a {
+        .framer-ziOPa .framer-1p4u90a {
             align-content: flex-start;
             align-items: flex-start;
             display: flex;
@@ -3546,15 +3553,15 @@
             width: 100%
         }
 
-        .framer-G90dz .framer-1lk0cot-container,
-        .framer-G90dz .framer-lhhn3j-container {
+        .framer-ziOPa .framer-1lk0cot-container,
+        .framer-ziOPa .framer-lhhn3j-container {
             flex: 1 0 0px;
             height: auto;
             position: relative;
             width: 1px
         }
 
-        .framer-G90dz .framer-5o3dd0 {
+        .framer-ziOPa .framer-5o3dd0 {
             align-content: center;
             align-items: center;
             display: flex;
@@ -3571,7 +3578,7 @@
             width: 100%
         }
 
-        .framer-G90dz .framer-1ro8itf {
+        .framer-ziOPa .framer-1ro8itf {
             align-content: flex-start;
             align-items: flex-start;
             display: flex;
@@ -3587,7 +3594,7 @@
             width: 1px
         }
 
-        .framer-G90dz .framer-sd06nc {
+        .framer-ziOPa .framer-sd06nc {
             --framer-link-text-color: #0099ff;
             --framer-link-text-decoration: underline;
             flex: none;
@@ -3601,14 +3608,14 @@
             z-index: 1
         }
 
-        .framer-G90dz .framer-191qwsx-container {
+        .framer-ziOPa .framer-191qwsx-container {
             flex: none;
             height: auto;
             position: relative;
             width: auto
         }
 
-        .framer-G90dz .framer-1qugcr0 {
+        .framer-ziOPa .framer-1qugcr0 {
             bottom: 15px;
             flex: none;
             height: 100vh;
@@ -3621,243 +3628,248 @@
 
         @supports (background: -webkit-named-image(i)) and (not (scale:1)) {
 
-            .framer-G90dz.framer-72rtr7,
-            .framer-G90dz .framer-11yezan,
-            .framer-G90dz .framer-dewjtt,
-            .framer-G90dz .framer-1tu7b0v,
-            .framer-G90dz .framer-7pinbo,
-            .framer-G90dz .framer-1b59nf9,
-            .framer-G90dz .framer-1chkqma,
-            .framer-G90dz .framer-1t98zrv,
-            .framer-G90dz .framer-j9yo38,
-            .framer-G90dz .framer-m276ll,
-            .framer-G90dz .framer-1u0pjka,
-            .framer-G90dz .framer-huvfll,
-            .framer-G90dz .framer-1a2dup1,
-            .framer-G90dz .framer-4rbx2f,
-            .framer-G90dz .framer-wvkvs1,
-            .framer-G90dz .framer-1pvdr9c,
-            .framer-G90dz .framer-qkzqqr,
-            .framer-G90dz .framer-xdgsxt,
-            .framer-G90dz .framer-1mxi429,
-            .framer-G90dz .framer-c9gqc7,
-            .framer-G90dz .framer-i9etg6,
-            .framer-G90dz .framer-1dqwdy7,
-            .framer-G90dz .framer-iu19zg,
-            .framer-G90dz .framer-1m6104i,
-            .framer-G90dz .framer-e0jeob,
-            .framer-G90dz .framer-cwceab,
-            .framer-G90dz .framer-1lj0y2m,
-            .framer-G90dz .framer-4j0p2h,
-            .framer-G90dz .framer-1lquz1p,
-            .framer-G90dz .framer-1j3sc5x,
-            .framer-G90dz .framer-1f1mc7v,
-            .framer-G90dz .framer-al4pnj,
-            .framer-G90dz .framer-1q4glo,
-            .framer-G90dz .framer-c8j4f6,
-            .framer-G90dz .framer-kdrb37,
-            .framer-G90dz .framer-jj5vmw,
-            .framer-G90dz .framer-1epcun4,
-            .framer-G90dz .framer-1qjpdtt,
-            .framer-G90dz .framer-v04x93,
-            .framer-G90dz .framer-1p4u90a,
-            .framer-G90dz .framer-5o3dd0,
-            .framer-G90dz .framer-1ro8itf {
+            .framer-ziOPa.framer-72rtr7,
+            .framer-ziOPa .framer-11yezan,
+            .framer-ziOPa .framer-dewjtt,
+            .framer-ziOPa .framer-1tu7b0v,
+            .framer-ziOPa .framer-7pinbo,
+            .framer-ziOPa .framer-1b59nf9,
+            .framer-ziOPa .framer-1chkqma,
+            .framer-ziOPa .framer-1t98zrv,
+            .framer-ziOPa .framer-j9yo38,
+            .framer-ziOPa .framer-m276ll,
+            .framer-ziOPa .framer-1u0pjka,
+            .framer-ziOPa .framer-huvfll,
+            .framer-ziOPa .framer-1a2dup1,
+            .framer-ziOPa .framer-4rbx2f,
+            .framer-ziOPa .framer-wvkvs1,
+            .framer-ziOPa .framer-1pvdr9c,
+            .framer-ziOPa .framer-qkzqqr,
+            .framer-ziOPa .framer-xdgsxt,
+            .framer-ziOPa .framer-1mxi429,
+            .framer-ziOPa .framer-c9gqc7,
+            .framer-ziOPa .framer-i9etg6,
+            .framer-ziOPa .framer-1dqwdy7,
+            .framer-ziOPa .framer-iu19zg,
+            .framer-ziOPa .framer-1m6104i,
+            .framer-ziOPa .framer-e0jeob,
+            .framer-ziOPa .framer-cwceab,
+            .framer-ziOPa .framer-1lj0y2m,
+            .framer-ziOPa .framer-4j0p2h,
+            .framer-ziOPa .framer-1lquz1p,
+            .framer-ziOPa .framer-1j3sc5x,
+            .framer-ziOPa .framer-1f1mc7v,
+            .framer-ziOPa .framer-al4pnj,
+            .framer-ziOPa .framer-1q4glo,
+            .framer-ziOPa .framer-c8j4f6,
+            .framer-ziOPa .framer-kdrb37,
+            .framer-ziOPa .framer-jj5vmw,
+            .framer-ziOPa .framer-1epcun4,
+            .framer-ziOPa .framer-1qjpdtt,
+            .framer-ziOPa .framer-v04x93,
+            .framer-ziOPa .framer-1p4u90a,
+            .framer-ziOPa .framer-5o3dd0,
+            .framer-ziOPa .framer-1ro8itf {
                 gap: 0px
             }
 
-            .framer-G90dz.framer-72rtr7>*,
-            .framer-G90dz .framer-11yezan>*,
-            .framer-G90dz .framer-1t98zrv>*,
-            .framer-G90dz .framer-j9yo38>*,
-            .framer-G90dz .framer-1u0pjka>*,
-            .framer-G90dz .framer-1m6104i>* {
+            .framer-ziOPa.framer-72rtr7>*,
+            .framer-ziOPa .framer-11yezan>*,
+            .framer-ziOPa .framer-1t98zrv>*,
+            .framer-ziOPa .framer-j9yo38>*,
+            .framer-ziOPa .framer-1u0pjka>*,
+            .framer-ziOPa .framer-1m6104i>* {
                 margin: 0
             }
 
-            .framer-G90dz.framer-72rtr7>:first-child,
-            .framer-G90dz .framer-11yezan>:first-child,
-            .framer-G90dz .framer-7pinbo>:first-child,
-            .framer-G90dz .framer-1b59nf9>:first-child,
-            .framer-G90dz .framer-1t98zrv>:first-child,
-            .framer-G90dz .framer-j9yo38>:first-child,
-            .framer-G90dz .framer-m276ll>:first-child,
-            .framer-G90dz .framer-1u0pjka>:first-child,
-            .framer-G90dz .framer-huvfll>:first-child,
-            .framer-G90dz .framer-1a2dup1>:first-child,
-            .framer-G90dz .framer-4rbx2f>:first-child,
-            .framer-G90dz .framer-qkzqqr>:first-child,
-            .framer-G90dz .framer-i9etg6>:first-child,
-            .framer-G90dz .framer-1m6104i>:first-child,
-            .framer-G90dz .framer-e0jeob>:first-child,
-            .framer-G90dz .framer-cwceab>:first-child,
-            .framer-G90dz .framer-1lj0y2m>:first-child,
-            .framer-G90dz .framer-4j0p2h>:first-child,
-            .framer-G90dz .framer-1lquz1p>:first-child,
-            .framer-G90dz .framer-1j3sc5x>:first-child,
-            .framer-G90dz .framer-1f1mc7v>:first-child,
-            .framer-G90dz .framer-al4pnj>:first-child,
-            .framer-G90dz .framer-1q4glo>:first-child,
-            .framer-G90dz .framer-c8j4f6>:first-child,
-            .framer-G90dz .framer-kdrb37>:first-child,
-            .framer-G90dz .framer-jj5vmw>:first-child,
-            .framer-G90dz .framer-v04x93>:first-child,
-            .framer-G90dz .framer-1ro8itf>:first-child {
+            .framer-ziOPa.framer-72rtr7>:first-child,
+            .framer-ziOPa .framer-11yezan>:first-child,
+            .framer-ziOPa .framer-7pinbo>:first-child,
+            .framer-ziOPa .framer-1b59nf9>:first-child,
+            .framer-ziOPa .framer-1t98zrv>:first-child,
+            .framer-ziOPa .framer-j9yo38>:first-child,
+            .framer-ziOPa .framer-m276ll>:first-child,
+            .framer-ziOPa .framer-1u0pjka>:first-child,
+            .framer-ziOPa .framer-huvfll>:first-child,
+            .framer-ziOPa .framer-1a2dup1>:first-child,
+            .framer-ziOPa .framer-4rbx2f>:first-child,
+            .framer-ziOPa .framer-qkzqqr>:first-child,
+            .framer-ziOPa .framer-i9etg6>:first-child,
+            .framer-ziOPa .framer-1m6104i>:first-child,
+            .framer-ziOPa .framer-e0jeob>:first-child,
+            .framer-ziOPa .framer-cwceab>:first-child,
+            .framer-ziOPa .framer-1lj0y2m>:first-child,
+            .framer-ziOPa .framer-4j0p2h>:first-child,
+            .framer-ziOPa .framer-1lquz1p>:first-child,
+            .framer-ziOPa .framer-1j3sc5x>:first-child,
+            .framer-ziOPa .framer-1f1mc7v>:first-child,
+            .framer-ziOPa .framer-al4pnj>:first-child,
+            .framer-ziOPa .framer-1q4glo>:first-child,
+            .framer-ziOPa .framer-c8j4f6>:first-child,
+            .framer-ziOPa .framer-kdrb37>:first-child,
+            .framer-ziOPa .framer-jj5vmw>:first-child,
+            .framer-ziOPa .framer-v04x93>:first-child,
+            .framer-ziOPa .framer-1ro8itf>:first-child {
                 margin-top: 0
             }
 
-            .framer-G90dz.framer-72rtr7>:last-child,
-            .framer-G90dz .framer-11yezan>:last-child,
-            .framer-G90dz .framer-7pinbo>:last-child,
-            .framer-G90dz .framer-1b59nf9>:last-child,
-            .framer-G90dz .framer-1t98zrv>:last-child,
-            .framer-G90dz .framer-j9yo38>:last-child,
-            .framer-G90dz .framer-m276ll>:last-child,
-            .framer-G90dz .framer-1u0pjka>:last-child,
-            .framer-G90dz .framer-huvfll>:last-child,
-            .framer-G90dz .framer-1a2dup1>:last-child,
-            .framer-G90dz .framer-4rbx2f>:last-child,
-            .framer-G90dz .framer-qkzqqr>:last-child,
-            .framer-G90dz .framer-i9etg6>:last-child,
-            .framer-G90dz .framer-1m6104i>:last-child,
-            .framer-G90dz .framer-e0jeob>:last-child,
-            .framer-G90dz .framer-cwceab>:last-child,
-            .framer-G90dz .framer-1lj0y2m>:last-child,
-            .framer-G90dz .framer-4j0p2h>:last-child,
-            .framer-G90dz .framer-1lquz1p>:last-child,
-            .framer-G90dz .framer-1j3sc5x>:last-child,
-            .framer-G90dz .framer-1f1mc7v>:last-child,
-            .framer-G90dz .framer-al4pnj>:last-child,
-            .framer-G90dz .framer-1q4glo>:last-child,
-            .framer-G90dz .framer-c8j4f6>:last-child,
-            .framer-G90dz .framer-kdrb37>:last-child,
-            .framer-G90dz .framer-jj5vmw>:last-child,
-            .framer-G90dz .framer-v04x93>:last-child,
-            .framer-G90dz .framer-1ro8itf>:last-child {
+            .framer-ziOPa.framer-72rtr7>:last-child,
+            .framer-ziOPa .framer-11yezan>:last-child,
+            .framer-ziOPa .framer-7pinbo>:last-child,
+            .framer-ziOPa .framer-1b59nf9>:last-child,
+            .framer-ziOPa .framer-1t98zrv>:last-child,
+            .framer-ziOPa .framer-j9yo38>:last-child,
+            .framer-ziOPa .framer-m276ll>:last-child,
+            .framer-ziOPa .framer-1u0pjka>:last-child,
+            .framer-ziOPa .framer-huvfll>:last-child,
+            .framer-ziOPa .framer-1a2dup1>:last-child,
+            .framer-ziOPa .framer-4rbx2f>:last-child,
+            .framer-ziOPa .framer-qkzqqr>:last-child,
+            .framer-ziOPa .framer-i9etg6>:last-child,
+            .framer-ziOPa .framer-1m6104i>:last-child,
+            .framer-ziOPa .framer-e0jeob>:last-child,
+            .framer-ziOPa .framer-cwceab>:last-child,
+            .framer-ziOPa .framer-1lj0y2m>:last-child,
+            .framer-ziOPa .framer-4j0p2h>:last-child,
+            .framer-ziOPa .framer-1lquz1p>:last-child,
+            .framer-ziOPa .framer-1j3sc5x>:last-child,
+            .framer-ziOPa .framer-1f1mc7v>:last-child,
+            .framer-ziOPa .framer-al4pnj>:last-child,
+            .framer-ziOPa .framer-1q4glo>:last-child,
+            .framer-ziOPa .framer-c8j4f6>:last-child,
+            .framer-ziOPa .framer-kdrb37>:last-child,
+            .framer-ziOPa .framer-jj5vmw>:last-child,
+            .framer-ziOPa .framer-v04x93>:last-child,
+            .framer-ziOPa .framer-1ro8itf>:last-child {
                 margin-bottom: 0
             }
 
-            .framer-G90dz .framer-dewjtt>*,
-            .framer-G90dz .framer-1tu7b0v>*,
-            .framer-G90dz .framer-1chkqma>*,
-            .framer-G90dz .framer-wvkvs1>*,
-            .framer-G90dz .framer-1pvdr9c>*,
-            .framer-G90dz .framer-xdgsxt>*,
-            .framer-G90dz .framer-1mxi429>*,
-            .framer-G90dz .framer-c9gqc7>*,
-            .framer-G90dz .framer-1epcun4>*,
-            .framer-G90dz .framer-1qjpdtt>* {
+            .framer-ziOPa .framer-dewjtt>*,
+            .framer-ziOPa .framer-1tu7b0v>*,
+            .framer-ziOPa .framer-1chkqma>*,
+            .framer-ziOPa .framer-wvkvs1>*,
+            .framer-ziOPa .framer-1pvdr9c>*,
+            .framer-ziOPa .framer-xdgsxt>*,
+            .framer-ziOPa .framer-1mxi429>*,
+            .framer-ziOPa .framer-c9gqc7>*,
+            .framer-ziOPa .framer-1epcun4>*,
+            .framer-ziOPa .framer-1qjpdtt>* {
                 margin: 0 5px
             }
 
-            .framer-G90dz .framer-dewjtt>:first-child,
-            .framer-G90dz .framer-1tu7b0v>:first-child,
-            .framer-G90dz .framer-1chkqma>:first-child,
-            .framer-G90dz .framer-wvkvs1>:first-child,
-            .framer-G90dz .framer-1pvdr9c>:first-child,
-            .framer-G90dz .framer-xdgsxt>:first-child,
-            .framer-G90dz .framer-1mxi429>:first-child,
-            .framer-G90dz .framer-c9gqc7>:first-child,
-            .framer-G90dz .framer-1dqwdy7>:first-child,
-            .framer-G90dz .framer-iu19zg>:first-child,
-            .framer-G90dz .framer-1epcun4>:first-child,
-            .framer-G90dz .framer-1qjpdtt>:first-child,
-            .framer-G90dz .framer-1p4u90a>:first-child,
-            .framer-G90dz .framer-5o3dd0>:first-child {
+            .framer-ziOPa .framer-dewjtt>:first-child,
+            .framer-ziOPa .framer-1tu7b0v>:first-child,
+            .framer-ziOPa .framer-1chkqma>:first-child,
+            .framer-ziOPa .framer-wvkvs1>:first-child,
+            .framer-ziOPa .framer-1pvdr9c>:first-child,
+            .framer-ziOPa .framer-xdgsxt>:first-child,
+            .framer-ziOPa .framer-1mxi429>:first-child,
+            .framer-ziOPa .framer-c9gqc7>:first-child,
+            .framer-ziOPa .framer-1dqwdy7>:first-child,
+            .framer-ziOPa .framer-iu19zg>:first-child,
+            .framer-ziOPa .framer-1epcun4>:first-child,
+            .framer-ziOPa .framer-1qjpdtt>:first-child,
+            .framer-ziOPa .framer-1p4u90a>:first-child,
+            .framer-ziOPa .framer-5o3dd0>:first-child {
                 margin-left: 0
             }
 
-            .framer-G90dz .framer-dewjtt>:last-child,
-            .framer-G90dz .framer-1tu7b0v>:last-child,
-            .framer-G90dz .framer-1chkqma>:last-child,
-            .framer-G90dz .framer-wvkvs1>:last-child,
-            .framer-G90dz .framer-1pvdr9c>:last-child,
-            .framer-G90dz .framer-xdgsxt>:last-child,
-            .framer-G90dz .framer-1mxi429>:last-child,
-            .framer-G90dz .framer-c9gqc7>:last-child,
-            .framer-G90dz .framer-1dqwdy7>:last-child,
-            .framer-G90dz .framer-iu19zg>:last-child,
-            .framer-G90dz .framer-1epcun4>:last-child,
-            .framer-G90dz .framer-1qjpdtt>:last-child,
-            .framer-G90dz .framer-1p4u90a>:last-child,
-            .framer-G90dz .framer-5o3dd0>:last-child {
+            .framer-ziOPa .framer-dewjtt>:last-child,
+            .framer-ziOPa .framer-1tu7b0v>:last-child,
+            .framer-ziOPa .framer-1chkqma>:last-child,
+            .framer-ziOPa .framer-wvkvs1>:last-child,
+            .framer-ziOPa .framer-1pvdr9c>:last-child,
+            .framer-ziOPa .framer-xdgsxt>:last-child,
+            .framer-ziOPa .framer-1mxi429>:last-child,
+            .framer-ziOPa .framer-c9gqc7>:last-child,
+            .framer-ziOPa .framer-1dqwdy7>:last-child,
+            .framer-ziOPa .framer-iu19zg>:last-child,
+            .framer-ziOPa .framer-1epcun4>:last-child,
+            .framer-ziOPa .framer-1qjpdtt>:last-child,
+            .framer-ziOPa .framer-1p4u90a>:last-child,
+            .framer-ziOPa .framer-5o3dd0>:last-child {
                 margin-right: 0
             }
 
-            .framer-G90dz .framer-7pinbo>*,
-            .framer-G90dz .framer-1ro8itf>* {
+            .framer-ziOPa .framer-7pinbo>*,
+            .framer-ziOPa .framer-1ro8itf>* {
                 margin: 12px 0
             }
 
-            .framer-G90dz .framer-1b59nf9>*,
-            .framer-G90dz .framer-m276ll>*,
-            .framer-G90dz .framer-huvfll>*,
-            .framer-G90dz .framer-1a2dup1>*,
-            .framer-G90dz .framer-4rbx2f>*,
-            .framer-G90dz .framer-e0jeob>*,
-            .framer-G90dz .framer-cwceab>*,
-            .framer-G90dz .framer-1lj0y2m>*,
-            .framer-G90dz .framer-4j0p2h>*,
-            .framer-G90dz .framer-1lquz1p>*,
-            .framer-G90dz .framer-1j3sc5x>*,
-            .framer-G90dz .framer-1f1mc7v>*,
-            .framer-G90dz .framer-al4pnj>*,
-            .framer-G90dz .framer-1q4glo>*,
-            .framer-G90dz .framer-c8j4f6>*,
-            .framer-G90dz .framer-kdrb37>*,
-            .framer-G90dz .framer-jj5vmw>* {
+            .framer-ziOPa .framer-1b59nf9>*,
+            .framer-ziOPa .framer-m276ll>*,
+            .framer-ziOPa .framer-huvfll>*,
+            .framer-ziOPa .framer-1a2dup1>*,
+            .framer-ziOPa .framer-4rbx2f>*,
+            .framer-ziOPa .framer-e0jeob>*,
+            .framer-ziOPa .framer-cwceab>*,
+            .framer-ziOPa .framer-1lj0y2m>*,
+            .framer-ziOPa .framer-4j0p2h>*,
+            .framer-ziOPa .framer-1lquz1p>*,
+            .framer-ziOPa .framer-1j3sc5x>*,
+            .framer-ziOPa .framer-1f1mc7v>*,
+            .framer-ziOPa .framer-al4pnj>*,
+            .framer-ziOPa .framer-1q4glo>*,
+            .framer-ziOPa .framer-c8j4f6>*,
+            .framer-ziOPa .framer-kdrb37>*,
+            .framer-ziOPa .framer-jj5vmw>* {
                 margin: 5px 0
             }
 
-            .framer-G90dz .framer-qkzqqr>*,
-            .framer-G90dz .framer-i9etg6>*,
-            .framer-G90dz .framer-v04x93>* {
+            .framer-ziOPa .framer-qkzqqr>*,
+            .framer-ziOPa .framer-i9etg6>*,
+            .framer-ziOPa .framer-v04x93>* {
                 margin: 48px 0
             }
 
-            .framer-G90dz .framer-1dqwdy7>*,
-            .framer-G90dz .framer-iu19zg>* {
+            .framer-ziOPa .framer-1dqwdy7>*,
+            .framer-ziOPa .framer-iu19zg>* {
                 margin: 0
             }
 
-            .framer-G90dz .framer-1p4u90a>*,
-            .framer-G90dz .framer-5o3dd0>* {
+            .framer-ziOPa .framer-1p4u90a>*,
+            .framer-ziOPa .framer-5o3dd0>* {
                 margin: 0 12px
             }
         }
 
         @media (min-width: 810px) and (max-width: 1199px) {
-            .framer-G90dz.framer-72rtr7 {
+            .framer-ziOPa.framer-72rtr7 {
                 width: 810px
             }
 
-            .framer-G90dz .framer-1chkqma {
+            .framer-ziOPa .framer-1chkqma {
                 flex: 1 0 0px;
                 height: 720px;
                 width: 1px
             }
 
-            .framer-G90dz .framer-1rbiqmn {
+            .framer-ziOPa .framer-1rbiqmn {
                 height: var(--framer-aspect-ratio-supported, 200px);
                 left: 55px;
                 width: 200px
             }
 
-            .framer-G90dz .framer-2qne85,
-            .framer-G90dz .framer-cwtr1j,
-            .framer-G90dz .framer-z3ohu7,
-            .framer-G90dz .framer-13k02wq {
+            .framer-ziOPa .framer-2qne85,
+            .framer-ziOPa .framer-cwtr1j,
+            .framer-ziOPa .framer-z3ohu7,
+            .framer-ziOPa .framer-13k02wq {
                 height: var(--framer-aspect-ratio-supported, 200px);
                 width: 200px
             }
 
-            .framer-G90dz .framer-gfruwm {
+            .framer-ziOPa .framer-gfruwm {
                 height: var(--framer-aspect-ratio-supported, 200px);
                 right: 54px;
                 width: 200px
             }
 
-            .framer-G90dz .framer-5t5cko {
+            .framer-ziOPa .framer-ss6pia {
+                left: 50%;
+                width: 763px
+            }
+
+            .framer-ziOPa .framer-5t5cko {
                 bottom: -120px;
                 height: var(--framer-aspect-ratio-supported, 666px);
                 left: 48px;
@@ -3867,7 +3879,7 @@
                 width: unset
             }
 
-            .framer-G90dz .framer-3dcuce {
+            .framer-ziOPa .framer-3dcuce {
                 height: var(--framer-aspect-ratio-supported, 240px);
                 left: 50%;
                 right: unset;
@@ -3876,150 +3888,150 @@
                 width: 240px
             }
 
-            .framer-G90dz .framer-1cpj5m4-container {
+            .framer-ziOPa .framer-1cpj5m4-container {
                 width: 844px
             }
 
-            .framer-G90dz .framer-10iu1of {
+            .framer-ziOPa .framer-10iu1of {
                 grid-template-columns: repeat(2, minmax(200px, 1fr));
                 max-width: 810px
             }
 
-            .framer-G90dz .framer-7s2ife {
+            .framer-ziOPa .framer-7s2ife {
                 height: var(--framer-aspect-ratio-supported, 600px);
                 width: 600px
             }
 
-            .framer-G90dz .framer-1m6104i {
+            .framer-ziOPa .framer-1m6104i {
                 width: 60%
             }
 
-            .framer-G90dz .framer-1medp2g-container {
+            .framer-ziOPa .framer-1medp2g-container {
                 bottom: -89px;
                 left: calc(52.735229759299806% - 120px / 2)
             }
 
-            .framer-G90dz .framer-1lmbz4b-container,
-            .framer-G90dz .framer-1vccsr9-container {
+            .framer-ziOPa .framer-1lmbz4b-container,
+            .framer-ziOPa .framer-1vccsr9-container {
                 bottom: -60px;
                 left: calc(50.10940919037201% - 120px / 2)
             }
 
-            .framer-G90dz .framer-xs6oek-container {
+            .framer-ziOPa .framer-xs6oek-container {
                 bottom: -60px;
                 left: calc(52.735229759299806% - 120px / 2)
             }
 
-            .framer-G90dz .framer-ffuadh-container {
+            .framer-ziOPa .framer-ffuadh-container {
                 bottom: -49px;
                 left: calc(52.735229759299806% - 120px / 2)
             }
 
-            .framer-G90dz .framer-19hauiz-container {
+            .framer-ziOPa .framer-19hauiz-container {
                 bottom: -34px;
                 left: calc(50.10940919037201% - 120px / 2)
             }
 
-            .framer-G90dz .framer-1idjgpa-container {
+            .framer-ziOPa .framer-1idjgpa-container {
                 bottom: -41px;
                 height: 133px;
                 left: calc(50.10940919037201% - 130px / 2);
                 width: 130px
             }
 
-            .framer-G90dz .framer-78sci1-container {
+            .framer-ziOPa .framer-78sci1-container {
                 bottom: -71px;
                 left: calc(50.10940919037201% - 120px / 2)
             }
 
-            .framer-G90dz .framer-1kkm8uz-container {
+            .framer-ziOPa .framer-1kkm8uz-container {
                 bottom: -36px;
                 height: 150px;
                 left: calc(47.04595185995626% - 130px / 2);
                 width: 130px
             }
 
-            .framer-G90dz .framer-wbmpo2-container {
+            .framer-ziOPa .framer-wbmpo2-container {
                 bottom: -36px;
                 height: 144px;
                 left: calc(49.0153172866521% - 130px / 2);
                 width: 130px
             }
 
-            .framer-G90dz .framer-1dqf18e-container {
+            .framer-ziOPa .framer-1dqf18e-container {
                 bottom: 0;
                 left: calc(50.10940919037201% - 120px / 2)
             }
 
-            .framer-G90dz .framer-1p4u90a {
+            .framer-ziOPa .framer-1p4u90a {
                 flex-direction: column
             }
 
-            .framer-G90dz .framer-1lk0cot-container,
-            .framer-G90dz .framer-lhhn3j-container {
+            .framer-ziOPa .framer-1lk0cot-container,
+            .framer-ziOPa .framer-lhhn3j-container {
                 flex: none;
                 width: 100%
             }
 
             @supports (background: -webkit-named-image(i)) and (not (scale:1)) {
-                .framer-G90dz .framer-1p4u90a {
+                .framer-ziOPa .framer-1p4u90a {
                     gap: 0px
                 }
 
-                .framer-G90dz .framer-1p4u90a>* {
+                .framer-ziOPa .framer-1p4u90a>* {
                     margin: 12px 0
                 }
 
-                .framer-G90dz .framer-1p4u90a>:first-child {
+                .framer-ziOPa .framer-1p4u90a>:first-child {
                     margin-top: 0
                 }
 
-                .framer-G90dz .framer-1p4u90a>:last-child {
+                .framer-ziOPa .framer-1p4u90a>:last-child {
                     margin-bottom: 0
                 }
             }
         }
 
         @media (max-width: 809px) {
-            .framer-G90dz.framer-72rtr7 {
+            .framer-ziOPa.framer-72rtr7 {
                 width: 390px
             }
 
-            .framer-G90dz .framer-11yezan {
+            .framer-ziOPa .framer-11yezan {
                 padding: 0 16px
             }
 
-            .framer-G90dz .framer-7pinbo {
+            .framer-ziOPa .framer-7pinbo {
                 left: 0;
                 right: 0;
                 transform: translateY(-50%);
                 width: unset
             }
 
-            .framer-G90dz .framer-njno9a {
+            .framer-ziOPa .framer-njno9a {
                 left: 51%;
                 top: -86px
             }
 
-            .framer-G90dz .framer-13cm7vp-container {
+            .framer-ziOPa .framer-13cm7vp-container {
                 top: -36px
             }
 
-            .framer-G90dz .framer-1chkqma,
-            .framer-G90dz .framer-1m6104i {
+            .framer-ziOPa .framer-1chkqma,
+            .framer-ziOPa .framer-1m6104i {
                 flex: 1 0 0px;
                 width: 1px
             }
 
-            .framer-G90dz .framer-1rbiqmn {
-                height: var(--framer-aspect-ratio-supported, 140px);
+            .framer-ziOPa .framer-1rbiqmn {
+                height: var(--framer-aspect-ratio-supported, 128px);
                 left: unset;
-                right: -16px;
-                top: 11px;
-                width: 140px
+                right: -3px;
+                top: 22px;
+                width: 128px
             }
 
-            .framer-G90dz .framer-2qne85 {
+            .framer-ziOPa .framer-2qne85 {
                 height: var(--framer-aspect-ratio-supported, 140px);
                 left: 48%;
                 top: -10px;
@@ -4028,16 +4040,16 @@
                 z-index: 1
             }
 
-            .framer-G90dz .framer-cwtr1j {
+            .framer-ziOPa .framer-cwtr1j {
                 bottom: unset;
-                height: var(--framer-aspect-ratio-supported, 140px);
-                left: -40px;
-                top: 11px;
-                width: 140px;
+                height: var(--framer-aspect-ratio-supported, 108px);
+                left: 7px;
+                top: 27px;
+                width: 108px;
                 z-index: 2
             }
 
-            .framer-G90dz .framer-gfruwm {
+            .framer-ziOPa .framer-gfruwm {
                 bottom: -20px;
                 height: var(--framer-aspect-ratio-supported, 140px);
                 right: 0;
@@ -4045,7 +4057,7 @@
                 width: 140px
             }
 
-            .framer-G90dz .framer-z3ohu7 {
+            .framer-ziOPa .framer-z3ohu7 {
                 bottom: -60px;
                 height: var(--framer-aspect-ratio-supported, 140px);
                 left: 50%;
@@ -4055,7 +4067,7 @@
                 width: 140px
             }
 
-            .framer-G90dz .framer-13k02wq {
+            .framer-ziOPa .framer-13k02wq {
                 bottom: -20px;
                 height: var(--framer-aspect-ratio-supported, 140px);
                 left: 0;
@@ -4064,11 +4076,16 @@
                 z-index: 1
             }
 
-            .framer-G90dz .framer-m276ll {
+            .framer-ziOPa .framer-m276ll {
                 padding: 96px 0
             }
 
-            .framer-G90dz .framer-5t5cko {
+            .framer-ziOPa .framer-ss6pia {
+                top: 77px;
+                width: 358px
+            }
+
+            .framer-ziOPa .framer-5t5cko {
                 bottom: 0;
                 height: var(--framer-aspect-ratio-supported, 358px);
                 left: 0;
@@ -4078,7 +4095,7 @@
                 width: unset
             }
 
-            .framer-G90dz .framer-3dcuce {
+            .framer-ziOPa .framer-3dcuce {
                 height: var(--framer-aspect-ratio-supported, 240px);
                 left: 50%;
                 right: unset;
@@ -4087,269 +4104,269 @@
                 width: 240px
             }
 
-            .framer-G90dz .framer-huvfll {
+            .framer-ziOPa .framer-huvfll {
                 gap: 48px
             }
 
-            .framer-G90dz .framer-1cpj5m4-container {
+            .framer-ziOPa .framer-1cpj5m4-container {
                 order: 0;
                 width: 379px
             }
 
-            .framer-G90dz .framer-qkzqqr,
-            .framer-G90dz .framer-i9etg6,
-            .framer-G90dz .framer-v04x93 {
+            .framer-ziOPa .framer-qkzqqr,
+            .framer-ziOPa .framer-i9etg6,
+            .framer-ziOPa .framer-v04x93 {
                 gap: 48px;
                 padding: 96px 0
             }
 
-            .framer-G90dz .framer-10iu1of {
+            .framer-ziOPa .framer-10iu1of {
                 gap: 16px;
                 grid-template-columns: repeat(1, minmax(200px, 1fr))
             }
 
-            .framer-G90dz .framer-18xds7x-container,
-            .framer-G90dz .framer-azz0t8-container,
-            .framer-G90dz .framer-8iwag3-container,
-            .framer-G90dz .framer-1c99j63-container,
-            .framer-G90dz .framer-l1r0wx-container,
-            .framer-G90dz .framer-mv6g26-container {
+            .framer-ziOPa .framer-18xds7x-container,
+            .framer-ziOPa .framer-azz0t8-container,
+            .framer-ziOPa .framer-8iwag3-container,
+            .framer-ziOPa .framer-1c99j63-container,
+            .framer-ziOPa .framer-l1r0wx-container,
+            .framer-ziOPa .framer-mv6g26-container {
                 height: 360px
             }
 
-            .framer-G90dz .framer-e0jeob,
-            .framer-G90dz .framer-cwceab,
-            .framer-G90dz .framer-1lj0y2m,
-            .framer-G90dz .framer-4j0p2h,
-            .framer-G90dz .framer-1lquz1p,
-            .framer-G90dz .framer-1j3sc5x,
-            .framer-G90dz .framer-1f1mc7v,
-            .framer-G90dz .framer-al4pnj,
-            .framer-G90dz .framer-1q4glo,
-            .framer-G90dz .framer-c8j4f6,
-            .framer-G90dz .framer-kdrb37,
-            .framer-G90dz .framer-jj5vmw {
+            .framer-ziOPa .framer-e0jeob,
+            .framer-ziOPa .framer-cwceab,
+            .framer-ziOPa .framer-1lj0y2m,
+            .framer-ziOPa .framer-4j0p2h,
+            .framer-ziOPa .framer-1lquz1p,
+            .framer-ziOPa .framer-1j3sc5x,
+            .framer-ziOPa .framer-1f1mc7v,
+            .framer-ziOPa .framer-al4pnj,
+            .framer-ziOPa .framer-1q4glo,
+            .framer-ziOPa .framer-c8j4f6,
+            .framer-ziOPa .framer-kdrb37,
+            .framer-ziOPa .framer-jj5vmw {
                 gap: 48px;
                 padding: 48px 0 0
             }
 
-            .framer-G90dz .framer-1medp2g-container {
+            .framer-ziOPa .framer-1medp2g-container {
                 bottom: -55px;
                 left: calc(50.00000000000002% - 120px / 2)
             }
 
-            .framer-G90dz .framer-tfs66r,
-            .framer-G90dz .framer-y5vmbb,
-            .framer-G90dz .framer-1s6y65y,
-            .framer-G90dz .framer-1fquskq,
-            .framer-G90dz .framer-1yvom51,
-            .framer-G90dz .framer-1d2sci5,
-            .framer-G90dz .framer-sm3ksp,
-            .framer-G90dz .framer-8gu6er,
-            .framer-G90dz .framer-7uw7io,
-            .framer-G90dz .framer-pyna20,
-            .framer-G90dz .framer-31ufm2 {
+            .framer-ziOPa .framer-tfs66r,
+            .framer-ziOPa .framer-y5vmbb,
+            .framer-ziOPa .framer-1s6y65y,
+            .framer-ziOPa .framer-1fquskq,
+            .framer-ziOPa .framer-1yvom51,
+            .framer-ziOPa .framer-1d2sci5,
+            .framer-ziOPa .framer-sm3ksp,
+            .framer-ziOPa .framer-8gu6er,
+            .framer-ziOPa .framer-7uw7io,
+            .framer-ziOPa .framer-pyna20,
+            .framer-ziOPa .framer-31ufm2 {
                 order: 1
             }
 
-            .framer-G90dz .framer-dzrd7c,
-            .framer-G90dz .framer-1lype57,
-            .framer-G90dz .framer-1393tzt,
-            .framer-G90dz .framer-2x3hit,
-            .framer-G90dz .framer-uwd414,
-            .framer-G90dz .framer-xefe37,
-            .framer-G90dz .framer-1ieadu8,
-            .framer-G90dz .framer-1nprhlz,
-            .framer-G90dz .framer-1fphfjt,
-            .framer-G90dz .framer-1vliokx,
-            .framer-G90dz .framer-unlzmn {
+            .framer-ziOPa .framer-dzrd7c,
+            .framer-ziOPa .framer-1lype57,
+            .framer-ziOPa .framer-1393tzt,
+            .framer-ziOPa .framer-2x3hit,
+            .framer-ziOPa .framer-uwd414,
+            .framer-ziOPa .framer-xefe37,
+            .framer-ziOPa .framer-1ieadu8,
+            .framer-ziOPa .framer-1nprhlz,
+            .framer-ziOPa .framer-1fphfjt,
+            .framer-ziOPa .framer-1vliokx,
+            .framer-ziOPa .framer-unlzmn {
                 order: 2
             }
 
-            .framer-G90dz .framer-1lmbz4b-container {
+            .framer-ziOPa .framer-1lmbz4b-container {
                 bottom: -60px;
                 left: calc(50.00000000000002% - 120px / 2);
                 order: 3
             }
 
-            .framer-G90dz .framer-prpeej-container,
-            .framer-G90dz .framer-qsnmim-container,
-            .framer-G90dz .framer-nfjns4-container,
-            .framer-G90dz .framer-14hrk6w-container,
-            .framer-G90dz .framer-ziz9r0-container,
-            .framer-G90dz .framer-4yqlr0-container,
-            .framer-G90dz .framer-1c1hkfg-container,
-            .framer-G90dz .framer-1g2xvm0-container,
-            .framer-G90dz .framer-1inip5j-container,
-            .framer-G90dz .framer-1ukpshc-container,
-            .framer-G90dz .framer-b9h0si-container {
+            .framer-ziOPa .framer-prpeej-container,
+            .framer-ziOPa .framer-qsnmim-container,
+            .framer-ziOPa .framer-nfjns4-container,
+            .framer-ziOPa .framer-14hrk6w-container,
+            .framer-ziOPa .framer-ziz9r0-container,
+            .framer-ziOPa .framer-4yqlr0-container,
+            .framer-ziOPa .framer-1c1hkfg-container,
+            .framer-ziOPa .framer-1g2xvm0-container,
+            .framer-ziOPa .framer-1inip5j-container,
+            .framer-ziOPa .framer-1ukpshc-container,
+            .framer-ziOPa .framer-b9h0si-container {
                 order: 0
             }
 
-            .framer-G90dz .framer-xs6oek-container {
+            .framer-ziOPa .framer-xs6oek-container {
                 bottom: -35px;
                 left: calc(48.60335195530728% - 120px / 2);
                 order: 3
             }
 
-            .framer-G90dz .framer-ffuadh-container {
+            .framer-ziOPa .framer-ffuadh-container {
                 bottom: 6px;
                 left: calc(50.00000000000002% - 120px / 2);
                 order: 3
             }
 
-            .framer-G90dz .framer-19hauiz-container {
+            .framer-ziOPa .framer-19hauiz-container {
                 bottom: 19px;
                 left: calc(50.00000000000002% - 120px / 2);
                 order: 3
             }
 
-            .framer-G90dz .framer-1idjgpa-container {
+            .framer-ziOPa .framer-1idjgpa-container {
                 bottom: 0;
                 left: calc(51.675977653631314% - 120px / 2);
                 order: 3
             }
 
-            .framer-G90dz .framer-78sci1-container {
+            .framer-ziOPa .framer-78sci1-container {
                 bottom: 0;
                 left: calc(46.927374301676004% - 120px / 2);
                 order: 3
             }
 
-            .framer-G90dz .framer-1kkm8uz-container {
+            .framer-ziOPa .framer-1kkm8uz-container {
                 bottom: -6px;
                 left: calc(50.00000000000002% - 120px / 2);
                 order: 3
             }
 
-            .framer-G90dz .framer-wbmpo2-container {
+            .framer-ziOPa .framer-wbmpo2-container {
                 bottom: -13px;
                 left: calc(50.00000000000002% - 120px / 2);
                 order: 3
             }
 
-            .framer-G90dz .framer-1dqf18e-container {
+            .framer-ziOPa .framer-1dqf18e-container {
                 bottom: -10px;
                 left: calc(48.04469273743019% - 120px / 2);
                 order: 3
             }
 
-            .framer-G90dz .framer-1vccsr9-container {
+            .framer-ziOPa .framer-1vccsr9-container {
                 bottom: 7px;
                 left: calc(51.39664804469276% - 120px / 2);
                 order: 3
             }
 
-            .framer-G90dz .framer-1p4u90a,
-            .framer-G90dz .framer-5o3dd0 {
+            .framer-ziOPa .framer-1p4u90a,
+            .framer-ziOPa .framer-5o3dd0 {
                 flex-direction: column
             }
 
-            .framer-G90dz .framer-1lk0cot-container,
-            .framer-G90dz .framer-lhhn3j-container,
-            .framer-G90dz .framer-1ro8itf {
+            .framer-ziOPa .framer-1lk0cot-container,
+            .framer-ziOPa .framer-lhhn3j-container,
+            .framer-ziOPa .framer-1ro8itf {
                 flex: none;
                 width: 100%
             }
 
-            .framer-G90dz .framer-1qugcr0 {
+            .framer-ziOPa .framer-1qugcr0 {
                 bottom: 0;
                 height: 1053px
             }
 
             @supports (background: -webkit-named-image(i)) and (not (scale:1)) {
 
-                .framer-G90dz .framer-huvfll,
-                .framer-G90dz .framer-qkzqqr,
-                .framer-G90dz .framer-10iu1of,
-                .framer-G90dz .framer-i9etg6,
-                .framer-G90dz .framer-e0jeob,
-                .framer-G90dz .framer-cwceab,
-                .framer-G90dz .framer-1lj0y2m,
-                .framer-G90dz .framer-4j0p2h,
-                .framer-G90dz .framer-1lquz1p,
-                .framer-G90dz .framer-1j3sc5x,
-                .framer-G90dz .framer-1f1mc7v,
-                .framer-G90dz .framer-al4pnj,
-                .framer-G90dz .framer-1q4glo,
-                .framer-G90dz .framer-c8j4f6,
-                .framer-G90dz .framer-kdrb37,
-                .framer-G90dz .framer-jj5vmw,
-                .framer-G90dz .framer-v04x93,
-                .framer-G90dz .framer-1p4u90a,
-                .framer-G90dz .framer-5o3dd0 {
+                .framer-ziOPa .framer-huvfll,
+                .framer-ziOPa .framer-qkzqqr,
+                .framer-ziOPa .framer-10iu1of,
+                .framer-ziOPa .framer-i9etg6,
+                .framer-ziOPa .framer-e0jeob,
+                .framer-ziOPa .framer-cwceab,
+                .framer-ziOPa .framer-1lj0y2m,
+                .framer-ziOPa .framer-4j0p2h,
+                .framer-ziOPa .framer-1lquz1p,
+                .framer-ziOPa .framer-1j3sc5x,
+                .framer-ziOPa .framer-1f1mc7v,
+                .framer-ziOPa .framer-al4pnj,
+                .framer-ziOPa .framer-1q4glo,
+                .framer-ziOPa .framer-c8j4f6,
+                .framer-ziOPa .framer-kdrb37,
+                .framer-ziOPa .framer-jj5vmw,
+                .framer-ziOPa .framer-v04x93,
+                .framer-ziOPa .framer-1p4u90a,
+                .framer-ziOPa .framer-5o3dd0 {
                     gap: 0px
                 }
 
-                .framer-G90dz .framer-huvfll>*,
-                .framer-G90dz .framer-qkzqqr>*,
-                .framer-G90dz .framer-i9etg6>*,
-                .framer-G90dz .framer-e0jeob>*,
-                .framer-G90dz .framer-cwceab>*,
-                .framer-G90dz .framer-1lj0y2m>*,
-                .framer-G90dz .framer-4j0p2h>*,
-                .framer-G90dz .framer-1lquz1p>*,
-                .framer-G90dz .framer-1j3sc5x>*,
-                .framer-G90dz .framer-1f1mc7v>*,
-                .framer-G90dz .framer-al4pnj>*,
-                .framer-G90dz .framer-1q4glo>*,
-                .framer-G90dz .framer-c8j4f6>*,
-                .framer-G90dz .framer-kdrb37>*,
-                .framer-G90dz .framer-jj5vmw>*,
-                .framer-G90dz .framer-v04x93>* {
+                .framer-ziOPa .framer-huvfll>*,
+                .framer-ziOPa .framer-qkzqqr>*,
+                .framer-ziOPa .framer-i9etg6>*,
+                .framer-ziOPa .framer-e0jeob>*,
+                .framer-ziOPa .framer-cwceab>*,
+                .framer-ziOPa .framer-1lj0y2m>*,
+                .framer-ziOPa .framer-4j0p2h>*,
+                .framer-ziOPa .framer-1lquz1p>*,
+                .framer-ziOPa .framer-1j3sc5x>*,
+                .framer-ziOPa .framer-1f1mc7v>*,
+                .framer-ziOPa .framer-al4pnj>*,
+                .framer-ziOPa .framer-1q4glo>*,
+                .framer-ziOPa .framer-c8j4f6>*,
+                .framer-ziOPa .framer-kdrb37>*,
+                .framer-ziOPa .framer-jj5vmw>*,
+                .framer-ziOPa .framer-v04x93>* {
                     margin: 24px 0
                 }
 
-                .framer-G90dz .framer-huvfll>:first-child,
-                .framer-G90dz .framer-qkzqqr>:first-child,
-                .framer-G90dz .framer-i9etg6>:first-child,
-                .framer-G90dz .framer-e0jeob>:first-child,
-                .framer-G90dz .framer-cwceab>:first-child,
-                .framer-G90dz .framer-1lj0y2m>:first-child,
-                .framer-G90dz .framer-4j0p2h>:first-child,
-                .framer-G90dz .framer-1lquz1p>:first-child,
-                .framer-G90dz .framer-1j3sc5x>:first-child,
-                .framer-G90dz .framer-1f1mc7v>:first-child,
-                .framer-G90dz .framer-al4pnj>:first-child,
-                .framer-G90dz .framer-1q4glo>:first-child,
-                .framer-G90dz .framer-c8j4f6>:first-child,
-                .framer-G90dz .framer-kdrb37>:first-child,
-                .framer-G90dz .framer-jj5vmw>:first-child,
-                .framer-G90dz .framer-v04x93>:first-child,
-                .framer-G90dz .framer-1p4u90a>:first-child,
-                .framer-G90dz .framer-5o3dd0>:first-child {
+                .framer-ziOPa .framer-huvfll>:first-child,
+                .framer-ziOPa .framer-qkzqqr>:first-child,
+                .framer-ziOPa .framer-i9etg6>:first-child,
+                .framer-ziOPa .framer-e0jeob>:first-child,
+                .framer-ziOPa .framer-cwceab>:first-child,
+                .framer-ziOPa .framer-1lj0y2m>:first-child,
+                .framer-ziOPa .framer-4j0p2h>:first-child,
+                .framer-ziOPa .framer-1lquz1p>:first-child,
+                .framer-ziOPa .framer-1j3sc5x>:first-child,
+                .framer-ziOPa .framer-1f1mc7v>:first-child,
+                .framer-ziOPa .framer-al4pnj>:first-child,
+                .framer-ziOPa .framer-1q4glo>:first-child,
+                .framer-ziOPa .framer-c8j4f6>:first-child,
+                .framer-ziOPa .framer-kdrb37>:first-child,
+                .framer-ziOPa .framer-jj5vmw>:first-child,
+                .framer-ziOPa .framer-v04x93>:first-child,
+                .framer-ziOPa .framer-1p4u90a>:first-child,
+                .framer-ziOPa .framer-5o3dd0>:first-child {
                     margin-top: 0
                 }
 
-                .framer-G90dz .framer-huvfll>:last-child,
-                .framer-G90dz .framer-qkzqqr>:last-child,
-                .framer-G90dz .framer-i9etg6>:last-child,
-                .framer-G90dz .framer-e0jeob>:last-child,
-                .framer-G90dz .framer-cwceab>:last-child,
-                .framer-G90dz .framer-1lj0y2m>:last-child,
-                .framer-G90dz .framer-4j0p2h>:last-child,
-                .framer-G90dz .framer-1lquz1p>:last-child,
-                .framer-G90dz .framer-1j3sc5x>:last-child,
-                .framer-G90dz .framer-1f1mc7v>:last-child,
-                .framer-G90dz .framer-al4pnj>:last-child,
-                .framer-G90dz .framer-1q4glo>:last-child,
-                .framer-G90dz .framer-c8j4f6>:last-child,
-                .framer-G90dz .framer-kdrb37>:last-child,
-                .framer-G90dz .framer-jj5vmw>:last-child,
-                .framer-G90dz .framer-v04x93>:last-child,
-                .framer-G90dz .framer-1p4u90a>:last-child,
-                .framer-G90dz .framer-5o3dd0>:last-child {
+                .framer-ziOPa .framer-huvfll>:last-child,
+                .framer-ziOPa .framer-qkzqqr>:last-child,
+                .framer-ziOPa .framer-i9etg6>:last-child,
+                .framer-ziOPa .framer-e0jeob>:last-child,
+                .framer-ziOPa .framer-cwceab>:last-child,
+                .framer-ziOPa .framer-1lj0y2m>:last-child,
+                .framer-ziOPa .framer-4j0p2h>:last-child,
+                .framer-ziOPa .framer-1lquz1p>:last-child,
+                .framer-ziOPa .framer-1j3sc5x>:last-child,
+                .framer-ziOPa .framer-1f1mc7v>:last-child,
+                .framer-ziOPa .framer-al4pnj>:last-child,
+                .framer-ziOPa .framer-1q4glo>:last-child,
+                .framer-ziOPa .framer-c8j4f6>:last-child,
+                .framer-ziOPa .framer-kdrb37>:last-child,
+                .framer-ziOPa .framer-jj5vmw>:last-child,
+                .framer-ziOPa .framer-v04x93>:last-child,
+                .framer-ziOPa .framer-1p4u90a>:last-child,
+                .framer-ziOPa .framer-5o3dd0>:last-child {
                     margin-bottom: 0
                 }
 
-                .framer-G90dz .framer-10iu1of>*,
-                .framer-G90dz .framer-10iu1of>:first-child,
-                .framer-G90dz .framer-10iu1of>:last-child {
+                .framer-ziOPa .framer-10iu1of>*,
+                .framer-ziOPa .framer-10iu1of>:first-child,
+                .framer-ziOPa .framer-10iu1of>:last-child {
                     margin: 0
                 }
 
-                .framer-G90dz .framer-1p4u90a>*,
-                .framer-G90dz .framer-5o3dd0>* {
+                .framer-ziOPa .framer-1p4u90a>*,
+                .framer-ziOPa .framer-5o3dd0>* {
                     margin: 12px 0
                 }
             }
@@ -6721,7 +6738,7 @@
     <!-- End of bodyStart -->
     <div id="main"
         data-framer-hydrate-v2='{"routeId":"augiA20Il","localeId":"default","breakpoints":[{"hash":"72rtr7","mediaQuery":"(min-width: 1200px)"},{"hash":"1wif7cb","mediaQuery":"(min-width: 810px) and (max-width: 1199px)"},{"hash":"1bcn5ap","mediaQuery":"(max-width: 809px)"},{"hash":"4xk2sl","mediaQuery":"(min-width: 1200px)"},{"hash":"1enly3e","mediaQuery":"(min-width: 810px) and (max-width: 1199px)"},{"hash":"1uotv0f","mediaQuery":"(max-width: 809px)"}]}'
-        data-framer-ssr-released-at="2025-04-11T14:43:37.753Z" data-framer-page-optimized-at="2025-04-16T14:25:58.557Z">
+        data-framer-ssr-released-at="2025-04-11T14:43:37.753Z" data-framer-page-optimized-at="2025-04-16T15:34:05.171Z">
         <!--$--><!--$-->
         <style data-framer-html-style>
             :root body {
@@ -6895,7 +6912,7 @@
                     background: rgb(255, 255, 255);
                 }
             </style>
-            <div data-framer-root class="framer-G90dz framer-5UinU framer-bDL2M framer-r8qnc framer-9wI2i framer-72rtr7"
+            <div data-framer-root class="framer-ziOPa framer-5UinU framer-bDL2M framer-r8qnc framer-9wI2i framer-72rtr7"
                 style="min-height:100vh;width:auto;display:contents">
                 <div class="framer-1q66or9-container"><!--$-->
                     <div></div><!--/$-->
@@ -7461,7 +7478,7 @@
                                         <div style="position:absolute;border-radius:inherit;top:0;right:0;bottom:0;left:0"
                                             data-framer-background-image-wrapper="true"><img decoding="async"
                                                 width="1024" height="1024"
-                                                sizes="(min-width: 1200px) 280px, (min-width: 810px) and (max-width: 1199px) 200px, (max-width: 809px) 140px"
+                                                sizes="(min-width: 1200px) 280px, (min-width: 810px) and (max-width: 1199px) 200px, (max-width: 809px) 128px"
                                                 srcset="https://framerusercontent.com/images/0f09LEy6qZK1Y9gL9T6AG622ZZ8.png?scale-down-to=512 512w,https://framerusercontent.com/images/0f09LEy6qZK1Y9gL9T6AG622ZZ8.png 1024w"
                                                 src="images/images-0f09LEy6qZK1Y9gL9T6AG622ZZ8.png" alt="Orange Pyramid"
                                                 style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center;object-fit:cover"
@@ -7474,7 +7491,7 @@
                                         <div style="position:absolute;border-radius:inherit;top:0;right:0;bottom:0;left:0"
                                             data-framer-background-image-wrapper="true"><img decoding="async"
                                                 width="1024" height="1024"
-                                                sizes="(min-width: 1200px) 280px, (min-width: 810px) and (max-width: 1199px) 200px, (max-width: 809px) 140px"
+                                                sizes="(min-width: 1200px) 280px, (min-width: 810px) and (max-width: 1199px) 200px, (max-width: 809px) 128px"
                                                 srcset="https://framerusercontent.com/images/0f09LEy6qZK1Y9gL9T6AG622ZZ8.png?scale-down-to=512 512w,https://framerusercontent.com/images/0f09LEy6qZK1Y9gL9T6AG622ZZ8.png 1024w"
                                                 src="images/images-0f09LEy6qZK1Y9gL9T6AG622ZZ8.png" alt="Orange Pyramid"
                                                 style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center;object-fit:cover"
@@ -7487,11 +7504,11 @@
                                         <div style="position:absolute;border-radius:inherit;top:0;right:0;bottom:0;left:0"
                                             data-framer-background-image-wrapper="true"><img decoding="async"
                                                 width="1024" height="1024"
-                                                sizes="(min-width: 1200px) 280px, (min-width: 810px) and (max-width: 1199px) 200px, (max-width: 809px) 140px"
+                                                sizes="(min-width: 1200px) 280px, (min-width: 810px) and (max-width: 1199px) 200px, (max-width: 809px) 128px"
                                                 srcset="https://framerusercontent.com/images/0f09LEy6qZK1Y9gL9T6AG622ZZ8.png?scale-down-to=512 512w,https://framerusercontent.com/images/0f09LEy6qZK1Y9gL9T6AG622ZZ8.png 1024w"
                                                 src="images/images-0f09LEy6qZK1Y9gL9T6AG622ZZ8.png" alt="Orange Pyramid"
                                                 style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center;object-fit:cover"
-                                                data-framer-original-sizes="140px"></div>
+                                                data-framer-original-sizes="128px"></div>
                                     </div>
                                 </div>
                                 <div class="ssr-variant hidden-1wif7cb hidden-1bcn5ap">
@@ -7539,7 +7556,7 @@
                                         <div style="position:absolute;border-radius:inherit;top:0;right:0;bottom:0;left:0"
                                             data-framer-background-image-wrapper="true"><img decoding="async"
                                                 width="1024" height="1024"
-                                                sizes="(min-width: 1200px) 280px, (min-width: 810px) and (max-width: 1199px) 200px, (max-width: 809px) 140px"
+                                                sizes="(min-width: 1200px) 280px, (min-width: 810px) and (max-width: 1199px) 200px, (max-width: 809px) 108px"
                                                 srcset="https://framerusercontent.com/images/lZLqIoLGAjMHHOlhOwugYSASrjc.png?scale-down-to=512 512w,https://framerusercontent.com/images/lZLqIoLGAjMHHOlhOwugYSASrjc.png 1024w"
                                                 src="images/images-lZLqIoLGAjMHHOlhOwugYSASrjc.png" alt="Blue Cylinder"
                                                 style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center;object-fit:cover"
@@ -7552,7 +7569,7 @@
                                         <div style="position:absolute;border-radius:inherit;top:0;right:0;bottom:0;left:0"
                                             data-framer-background-image-wrapper="true"><img decoding="async"
                                                 width="1024" height="1024"
-                                                sizes="(min-width: 1200px) 280px, (min-width: 810px) and (max-width: 1199px) 200px, (max-width: 809px) 140px"
+                                                sizes="(min-width: 1200px) 280px, (min-width: 810px) and (max-width: 1199px) 200px, (max-width: 809px) 108px"
                                                 srcset="https://framerusercontent.com/images/lZLqIoLGAjMHHOlhOwugYSASrjc.png?scale-down-to=512 512w,https://framerusercontent.com/images/lZLqIoLGAjMHHOlhOwugYSASrjc.png 1024w"
                                                 src="images/images-lZLqIoLGAjMHHOlhOwugYSASrjc.png" alt="Blue Cylinder"
                                                 style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center;object-fit:cover"
@@ -7565,11 +7582,11 @@
                                         <div style="position:absolute;border-radius:inherit;top:0;right:0;bottom:0;left:0"
                                             data-framer-background-image-wrapper="true"><img decoding="async"
                                                 width="1024" height="1024"
-                                                sizes="(min-width: 1200px) 280px, (min-width: 810px) and (max-width: 1199px) 200px, (max-width: 809px) 140px"
+                                                sizes="(min-width: 1200px) 280px, (min-width: 810px) and (max-width: 1199px) 200px, (max-width: 809px) 108px"
                                                 srcset="https://framerusercontent.com/images/lZLqIoLGAjMHHOlhOwugYSASrjc.png?scale-down-to=512 512w,https://framerusercontent.com/images/lZLqIoLGAjMHHOlhOwugYSASrjc.png 1024w"
                                                 src="images/images-lZLqIoLGAjMHHOlhOwugYSASrjc.png" alt="Blue Cylinder"
                                                 style="display:block;width:100%;height:100%;border-radius:inherit;object-position:center;object-fit:cover"
-                                                data-framer-original-sizes="140px"></div>
+                                                data-framer-original-sizes="108px"></div>
                                     </div>
                                 </div>
                                 <div class="ssr-variant hidden-1wif7cb hidden-1bcn5ap">
@@ -12441,7 +12458,7 @@
 
     
     <script data-framer-appear-animation="no-preference"></script>
-    <script>(() => { function d(e) { let t = Date.prototype.toLocaleString, o = Date.prototype.toLocaleDateString; t && (Date.prototype.toLocaleString = function (r, n) { let i = s(this, r, n); return u(e.current.Date.toLocaleString, i, () => t.call(this, r, n)) }), o && (Date.prototype.toLocaleDateString = function (r, n) { let i = s(this, r, n); return u(e.current.Date.toLocaleDateString, i, () => o.call(this, r, n)) }); let a = Object.getOwnPropertyDescriptors(Intl.DateTimeFormat.prototype).format.get, c = Intl.DateTimeFormat.prototype.formatRange, b = Intl.DateTimeFormat.prototype.formatToParts, D = Intl.DateTimeFormat.prototype.formatRangeToParts; a && Object.defineProperty(Intl.DateTimeFormat.prototype, "format", { get() { function m(r) { let n = p(this), i = s(r, n); return u(e.current.DateTimeFormat.format, i, () => a.call(this)(r)) } return m.bind(this) } }), c && (Intl.DateTimeFormat.prototype.formatRange = function (r, n) { let i = p(this), l = s(r, n, i); return u(e.current.DateTimeFormat.formatRange, l, () => c.call(this, r, n)) }), b && (Intl.DateTimeFormat.prototype.formatToParts = function (r) { let n = p(this), i = s(r, n); return u(e.current.DateTimeFormat.formatToParts, i, () => b.call(this, r)).map(g) }), D && (Intl.DateTimeFormat.prototype.formatRangeToParts = function (r, n) { let i = p(this), l = s(r, n, i); return u(e.current.DateTimeFormat.formatRangeToParts, l, () => D.call(this, r, n)).map(g) }); let y = Number.prototype.toLocaleString; y && (Number.prototype.toLocaleString = function (r, n) { let i = s(this, r, n); return u(e.current.Number.toLocaleString, i, () => y.call(this, r, n)) }); let h = Object.getOwnPropertyDescriptors(Intl.NumberFormat.prototype).format.get, F = Intl.NumberFormat.prototype.formatRange, T = Intl.NumberFormat.prototype.formatToParts, I = Intl.NumberFormat.prototype.formatRangeToParts; h && Object.defineProperty(Intl.NumberFormat.prototype, "format", { get() { function m(r) { let n = f(this), i = s(r, n); return u(e.current.NumberFormat.format, i, () => h.call(this)(r)) } return m.bind(this) } }), F && (Intl.NumberFormat.prototype.formatRange = function (r, n) { let i = f(this), l = s(r, n, i); return u(e.current.NumberFormat.formatRange, l, () => F.call(this, r, n)) }), T && (Intl.NumberFormat.prototype.formatToParts = function (r) { let n = f(this), i = s(r, n); return u(e.current.NumberFormat.formatToParts, i, () => T.call(this, r)).map(g) }), I && (Intl.NumberFormat.prototype.formatRangeToParts = function (r, n) { let i = f(this), l = s(r, n, i); return u(e.current.NumberFormat.formatRangeToParts, l, () => I.call(this, r, n)).map(g) }) } function P(e, t) { return typeof t == "bigint" ? `${t}n` : t instanceof Date ? t.getTime() : t } function s(...e) { let t = JSON.stringify(e, P), o = 0; for (let a = 0; a < t.length; a++)o += t.charCodeAt(a), o += o << 10, o ^= o >> 6; return o += o << 3, o ^= o >> 11, o += o << 15, o >>> 0 } function u(e, t, o) { let a = e[t]; if (typeof a < "u") return a; let c = o(); return e[t] = c, c } function g(e) { return { ...e } } function p(e) { let t = e.resolvedOptions(), o = { locale: t.locale, calendar: t.calendar, numberingSystem: t.numberingSystem, timeZone: t.timeZone, hour12: t.hour12, weekday: t.weekday, era: t.era, year: t.year, month: t.month, day: t.day, hour: t.hour, minute: t.minute, second: t.second, timeZoneName: t.timeZoneName }; for (let a in t) a in o || (o[a] = t[a]); return o } function f(e) { let t = e.resolvedOptions(), o = { locale: t.locale, numberingSystem: t.numberingSystem, style: t.style, currency: t.currency, currencyDisplay: t.currencyDisplay, currencySign: t.currencySign, unit: t.unit, unitDisplay: t.unitDisplay, minimumIntegerDigits: t.minimumIntegerDigits, minimumFractionDigits: t.minimumFractionDigits, maximumFractionDigits: t.maximumFractionDigits, minimumSignificantDigits: t.minimumSignificantDigits, maximumSignificantDigits: t.maximumSignificantDigits, useGrouping: t.useGrouping === !0 ? "auto" : t.useGrouping, notation: t.notation, compactDisplay: t.compactDisplay, signDisplay: t.signDisplay, roundingIncrement: t.roundingIncrement ?? 1, roundingMode: t.roundingMode ?? "halfExpand", roundingPriority: t.roundingPriority ?? "auto", trailingZeroDisplay: t.trailingZeroDisplay ?? "auto" }; for (let a in t) a in o || (o[a] = t[a]); return o } return d })()({ current: { "Date": { "toLocaleString": {}, "toLocaleDateString": {} }, "DateTimeFormat": { "format": { "1291802474": "2025", "3241676662": "2025" }, "formatRange": {}, "formatToParts": {}, "formatRangeToParts": {} }, "Number": { "toLocaleString": {} }, "NumberFormat": { "format": {}, "formatRange": {}, "formatToParts": {}, "formatRangeToParts": {} } } })</script>
+    <script>(() => { function d(e) { let t = Date.prototype.toLocaleString, o = Date.prototype.toLocaleDateString; t && (Date.prototype.toLocaleString = function (r, n) { let i = s(this, r, n); return u(e.current.Date.toLocaleString, i, () => t.call(this, r, n)) }), o && (Date.prototype.toLocaleDateString = function (r, n) { let i = s(this, r, n); return u(e.current.Date.toLocaleDateString, i, () => o.call(this, r, n)) }); let a = Object.getOwnPropertyDescriptors(Intl.DateTimeFormat.prototype).format.get, c = Intl.DateTimeFormat.prototype.formatRange, b = Intl.DateTimeFormat.prototype.formatToParts, D = Intl.DateTimeFormat.prototype.formatRangeToParts; a && Object.defineProperty(Intl.DateTimeFormat.prototype, "format", { get() { function m(r) { let n = p(this), i = s(r, n); return u(e.current.DateTimeFormat.format, i, () => a.call(this)(r)) } return m.bind(this) } }), c && (Intl.DateTimeFormat.prototype.formatRange = function (r, n) { let i = p(this), l = s(r, n, i); return u(e.current.DateTimeFormat.formatRange, l, () => c.call(this, r, n)) }), b && (Intl.DateTimeFormat.prototype.formatToParts = function (r) { let n = p(this), i = s(r, n); return u(e.current.DateTimeFormat.formatToParts, i, () => b.call(this, r)).map(g) }), D && (Intl.DateTimeFormat.prototype.formatRangeToParts = function (r, n) { let i = p(this), l = s(r, n, i); return u(e.current.DateTimeFormat.formatRangeToParts, l, () => D.call(this, r, n)).map(g) }); let y = Number.prototype.toLocaleString; y && (Number.prototype.toLocaleString = function (r, n) { let i = s(this, r, n); return u(e.current.Number.toLocaleString, i, () => y.call(this, r, n)) }); let h = Object.getOwnPropertyDescriptors(Intl.NumberFormat.prototype).format.get, F = Intl.NumberFormat.prototype.formatRange, T = Intl.NumberFormat.prototype.formatToParts, I = Intl.NumberFormat.prototype.formatRangeToParts; h && Object.defineProperty(Intl.NumberFormat.prototype, "format", { get() { function m(r) { let n = f(this), i = s(r, n); return u(e.current.NumberFormat.format, i, () => h.call(this)(r)) } return m.bind(this) } }), F && (Intl.NumberFormat.prototype.formatRange = function (r, n) { let i = f(this), l = s(r, n, i); return u(e.current.NumberFormat.formatRange, l, () => F.call(this, r, n)) }), T && (Intl.NumberFormat.prototype.formatToParts = function (r) { let n = f(this), i = s(r, n); return u(e.current.NumberFormat.formatToParts, i, () => T.call(this, r)).map(g) }), I && (Intl.NumberFormat.prototype.formatRangeToParts = function (r, n) { let i = f(this), l = s(r, n, i); return u(e.current.NumberFormat.formatRangeToParts, l, () => I.call(this, r, n)).map(g) }) } function P(e, t) { return typeof t == "bigint" ? `${t}n` : t instanceof Date ? t.getTime() : t } function s(...e) { let t = JSON.stringify(e, P), o = 0; for (let a = 0; a < t.length; a++)o += t.charCodeAt(a), o += o << 10, o ^= o >> 6; return o += o << 3, o ^= o >> 11, o += o << 15, o >>> 0 } function u(e, t, o) { let a = e[t]; if (typeof a < "u") return a; let c = o(); return e[t] = c, c } function g(e) { return { ...e } } function p(e) { let t = e.resolvedOptions(), o = { locale: t.locale, calendar: t.calendar, numberingSystem: t.numberingSystem, timeZone: t.timeZone, hour12: t.hour12, weekday: t.weekday, era: t.era, year: t.year, month: t.month, day: t.day, hour: t.hour, minute: t.minute, second: t.second, timeZoneName: t.timeZoneName }; for (let a in t) a in o || (o[a] = t[a]); return o } function f(e) { let t = e.resolvedOptions(), o = { locale: t.locale, numberingSystem: t.numberingSystem, style: t.style, currency: t.currency, currencyDisplay: t.currencyDisplay, currencySign: t.currencySign, unit: t.unit, unitDisplay: t.unitDisplay, minimumIntegerDigits: t.minimumIntegerDigits, minimumFractionDigits: t.minimumFractionDigits, maximumFractionDigits: t.maximumFractionDigits, minimumSignificantDigits: t.minimumSignificantDigits, maximumSignificantDigits: t.maximumSignificantDigits, useGrouping: t.useGrouping === !0 ? "auto" : t.useGrouping, notation: t.notation, compactDisplay: t.compactDisplay, signDisplay: t.signDisplay, roundingIncrement: t.roundingIncrement ?? 1, roundingMode: t.roundingMode ?? "halfExpand", roundingPriority: t.roundingPriority ?? "auto", trailingZeroDisplay: t.trailingZeroDisplay ?? "auto" }; for (let a in t) a in o || (o[a] = t[a]); return o } return d })()({ current: { "Date": { "toLocaleString": {}, "toLocaleDateString": {} }, "DateTimeFormat": { "format": { "2886924253": "2025", "3421561744": "2025" }, "formatRange": {}, "formatToParts": {}, "formatRangeToParts": {} }, "Number": { "toLocaleString": {} }, "NumberFormat": { "format": {}, "formatRange": {}, "formatToParts": {}, "formatRangeToParts": {} } } })</script>
     <link rel="modulepreload" fetchpriority="low"
         href="https://framerusercontent.com/sites/7qKyFZs1XGqSxfS7CW80Ra/chunk-LURNRP4Q.mjs">
     <link rel="modulepreload" fetchpriority="low"
@@ -12457,13 +12474,13 @@
     <link rel="modulepreload" fetchpriority="low"
         href="https://framerusercontent.com/sites/7qKyFZs1XGqSxfS7CW80Ra/chunk-42U43NKG.mjs">
     <link rel="modulepreload" fetchpriority="low"
-        href="https://framerusercontent.com/sites/7qKyFZs1XGqSxfS7CW80Ra/OcSKddgTxDyrU_fPm_j2M1x5GdLOYOtCSoKTdm_pFZY.7M3ZG3XZ.mjs">
+        href="https://framerusercontent.com/sites/7qKyFZs1XGqSxfS7CW80Ra/XKdD5vG0PcxNQnc2irWhiIINzqsgrWyMFoN2equKCJ4.732Z4246.mjs">
     <link rel="modulepreload" fetchpriority="low"
         href="https://framerusercontent.com/sites/7qKyFZs1XGqSxfS7CW80Ra/chunk-73TTQG32.mjs">
     <link rel="modulepreload" fetchpriority="low"
         href="https://framerusercontent.com/sites/7qKyFZs1XGqSxfS7CW80Ra/chunk-CHZ56HEB.mjs">
     <link rel="modulepreload" fetchpriority="low"
-        href="https://framerusercontent.com/sites/7qKyFZs1XGqSxfS7CW80Ra/chunk-DZGFZY2L.mjs">
+        href="https://framerusercontent.com/sites/7qKyFZs1XGqSxfS7CW80Ra/chunk-UL2IGHCQ.mjs">
     <link rel="modulepreload" fetchpriority="low"
         href="https://framerusercontent.com/sites/7qKyFZs1XGqSxfS7CW80Ra/chunk-B5JY5AAI.mjs">
     <link rel="modulepreload" fetchpriority="low"
@@ -12475,9 +12492,9 @@
     <link rel="modulepreload" fetchpriority="low"
         href="https://framerusercontent.com/sites/7qKyFZs1XGqSxfS7CW80Ra/chunk-3KWT7W3C.mjs">
     <link rel="modulepreload" fetchpriority="low"
-        href="https://framerusercontent.com/sites/7qKyFZs1XGqSxfS7CW80Ra/script_main.OQI4AIXF.mjs">
+        href="https://framerusercontent.com/sites/7qKyFZs1XGqSxfS7CW80Ra/script_main.IYEMRKSY.mjs">
     <script type="module" async data-framer-bundle="main" fetchpriority="low"
-        src="https://framerusercontent.com/sites/7qKyFZs1XGqSxfS7CW80Ra/script_main.OQI4AIXF.mjs"></script>
+        src="https://framerusercontent.com/sites/7qKyFZs1XGqSxfS7CW80Ra/script_main.IYEMRKSY.mjs"></script>
     <div id="svg-templates"
         style="position: absolute; overflow: hidden; bottom: 0; left: 0; width: 0; height: 0; z-index: 0; contain: strict"
         aria-hidden="true">
